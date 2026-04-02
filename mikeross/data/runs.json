@@ -1,0 +1,1430 @@
+[
+  {
+    "id": "86c1a53a-18d0-4194-8bdd-255a9999ebf9",
+    "contractName": "1 - NDA_AspoeckSystems_Form2022_final_EN_ungeschuetzt_Portugal_bearbeitet_PT.docx",
+    "model": "claude-haiku-4-5-20251001",
+    "createdAt": "2026-03-29T00:15:59.233Z",
+    "issues": [
+      {
+        "clause": "Purpose",
+        "playbookSection": "Purpose",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA includes a specific PURPOSE section defining cooperation as manufacturing components/equipment or services, whereas Bolt standard does not require purpose designation.",
+        "counterpartyText": "ASPÖCK intends to engage to manufacture components/equipaments or/and Services (select one).",
+        "talkingPoint": "Bolt considers all disclosed information as Confidential Information without requiring specific purpose designation.",
+        "fallback": "If unique circumstances require, add amendment: 'The Confidential Information disclosed for the purposes of this Agreement relates specifically to [INSERT SPECIFIC PROJECT PURPOSE].' with service desk ticket to legal."
+      },
+      {
+        "clause": "Definition of Affiliates - Limitation",
+        "playbookSection": "Definition of Affiliates",
+        "severity": "hard_stop",
+        "deviation": "Counterparty limits Affiliates to those with 'majority interest, controlling interest or common management,' narrowing scope vs. Bolt's broad definition.",
+        "counterpartyText": "affiliated companies as those for which there is a majority interest, controlling interest or common management",
+        "talkingPoint": "Bolt's corporate structure requires free information sharing across entities; restricting Affiliates creates operational friction and information-sharing risks.",
+        "fallback": null
+      },
+      {
+        "clause": "Definition of Affiliates - Personnel Restriction",
+        "playbookSection": "Definition of Affiliates",
+        "severity": "hard_stop",
+        "deviation": "Counterparty restricts information recipients to designated employees who have been explicitly asked to maintain confidentiality, limiting broader personnel access.",
+        "counterpartyText": "only those employees of a PARTY who have been designated to take part in the COOPERATION and have been asked to keep INFORMATION confidential",
+        "talkingPoint": "Bolt's NDA wording permits disclosure to third parties, employees, agents, and professional advisors without pre-designation requirement.",
+        "fallback": null
+      },
+      {
+        "clause": "Use and Disclosure - Restricted Purpose",
+        "playbookSection": "Use and Disclosure of Confidential Information",
+        "severity": "negotiate",
+        "deviation": "Counterparty restricts use to purposes explicitly stated in agreement and requires written permission for any dissemination beyond designated scope.",
+        "counterpartyText": "use this INFORMATION only for the purposes of this agreement. Dissemination of this INFORMATION is permitted only after explicit written permission",
+        "talkingPoint": "Bolt requires flexibility to use disclosed information for ongoing business relationship, not tied to single purpose.",
+        "fallback": "See fallback points for the purpose section above."
+      },
+      {
+        "clause": "Return of Confidential Information",
+        "playbookSection": "Return of Confidential Information",
+        "severity": "negotiate",
+        "deviation": "Counterparty requires all information and copies be returned immediately upon request or end of cooperation, except where required by law.",
+        "counterpartyText": "All INFORMATION (including samples, materials etc.) and copies, reproductions, notes etc. shall be issued to the transmitting PARTY immediately upon prompting",
+        "talkingPoint": "Bolt maintains strong position against retaining counterparty information post-relationship, but permits retention where regulatory/professional obligations exist.",
+        "fallback": "If regulatory obligation exists, add language permitting retention with continued confidentiality obligation and extend survival provisions to 3 years post-termination."
+      },
+      {
+        "clause": "Disclosures to Governmental Entities",
+        "playbookSection": "Disclosures to Governmental Entities",
+        "severity": "negotiate",
+        "deviation": "Counterparty requires transmitting party to be notified immediately prior to legally-required disclosures, but does not permit disclosure without prior notice.",
+        "counterpartyText": "If the law dictates that INFORMATION must be disseminated, the transmitting PARTY shall always be notified of this obligation immediately prior to the impending dissemination",
+        "talkingPoint": "Bolt accepts notification prior to disclosure, but acknowledges receiving party may be under legal duty to disclose without advance notice.",
+        "fallback": "Insert language: 'If Company is unable to inform Bolt before disclosure, it shall, to the extent permitted by law, inform Bolt of full circumstances and information disclosed as soon as reasonably practicable after disclosure.'"
+      },
+      {
+        "clause": "Scope, Term, and Termination",
+        "playbookSection": "Scope, Term, and Termination",
+        "severity": "negotiate",
+        "deviation": "Counterparty sets confidentiality obligation expiration at 10 years post-cooperation completion, exceeding Bolt standard 3-year baseline.",
+        "counterpartyText": "The obligation to confidentiality shall expire 10 years after this agreement / the COOPERATION is complete",
+        "talkingPoint": "Bolt standard is flexible on term duration; 10 years is longer than typical 1-5 year options but acceptable at commercial discretion.",
+        "fallback": "Accept term of 1, 2, 3, 5, or 10 years at your own commercial discretion."
+      },
+      {
+        "clause": "Scope, Term, and Termination - Automatic Termination",
+        "playbookSection": "Scope, Term, and Termination",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA terminates automatically upon completion of cooperation, vs. Bolt's defined term structure.",
+        "counterpartyText": "This agreement shall go into effect once it is signed by the PARTIES and shall be terminated automatically once the COOPERATION is complete",
+        "talkingPoint": "Automatic termination on cooperation completion creates ambiguity; Bolt prefers fixed term independent of cooperation status.",
+        "fallback": "Negotiate fixed term independent of cooperation completion status."
+      },
+      {
+        "clause": "Warranties",
+        "playbookSection": "Warranties",
+        "severity": "acceptable",
+        "deviation": "Counterparty disclaims liability for accuracy, completeness, errors, property rights, or usability of information, aligning with Bolt's non-warranty position.",
+        "counterpartyText": "The transmitting PARTY shall not be liable for accuracy, absence of errors, completeness or the absence of property rights",
+        "talkingPoint": "Counterparty warranty disclaimer is acceptable and consistent with Bolt standard practice.",
+        "fallback": null
+      },
+      {
+        "clause": "Miscellaneous - Governing Law",
+        "playbookSection": "Miscellaneous",
+        "severity": "negotiate",
+        "deviation": "Counterparty specifies Portuguese law and Portuguese jurisdiction at ASPÖCK Portugal's corporate seat, vs. Bolt's preference for Estonian law.",
+        "counterpartyText": "Portuguese law shall apply except in cases in which there is a conflict of laws. The place of jurisdiction is the court that has subject-matter jurisdiction at the corporate seat of ASPÖCK Portugal",
+        "talkingPoint": "Bolt standard is Estonia; alternative jurisdiction acceptable only where Bolt has legal entity established.",
+        "fallback": "Bolt will accept alternative jurisdiction where Bolt has legal entity established if absolutely necessary; otherwise maintain Estonia as first choice."
+      },
+      {
+        "clause": "GDPR Data Processing",
+        "playbookSection": "Miscellaneous",
+        "severity": "negotiate",
+        "deviation": "Counterparty imposes extensive GDPR data processor obligations and subprocessor notification requirements not present in Bolt standard NDA.",
+        "counterpartyText": "The supplier declares, as a subcontractor of Aspöck Portugal... the processing of personal data shall be in accordance with documented instructions",
+        "talkingPoint": "GDPR data processing terms are substantial and may not be appropriate for a general NDA unless personal data is core subject of disclosure.",
+        "fallback": "Negotiate scope: clarify whether personal data processing is actual component of cooperation; if not, request removal or limitation to specified data categories. If necessary, escalate to legal service desk."
+      },
+      {
+        "clause": "Liability and Penalty",
+        "playbookSection": "Penalties",
+        "severity": "acceptable",
+        "deviation": "Counterparty applies valid tort law for violations but does not impose specific penalty clauses, aligning with Bolt's anti-penalty position.",
+        "counterpartyText": "The valid tort law shall be applicable if there are violations to this agreement",
+        "talkingPoint": "Counterparty's approach of relying on tort law without specific penalties is acceptable to Bolt.",
+        "fallback": null
+      }
+    ]
+  },
+  {
+    "id": "6403e00d-8a96-401e-b9b3-4df9beca3d1c",
+    "contractName": "1 - NDA_AspoeckSystems_Form2022_final_EN_ungeschuetzt_Portugal_bearbeitet_PT.docx",
+    "model": "claude-haiku-4-5-20251001",
+    "createdAt": "2026-03-29T00:34:05.227Z",
+    "issues": [
+      {
+        "clause": "Purpose",
+        "playbookSection": "Purpose",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA includes a specific Purpose section defining the cooperation as manufacturing components/equipment or services, whereas Bolt standard does not require purpose designation.",
+        "counterpartyText": "ASPÖCK intends to engage to manufacture components/equipaments or/and Services (select one).",
+        "talkingPoint": "Bolt discloses all information as Confidential Information without requiring specific purpose designation, relying on broad confidentiality undertakings.",
+        "fallback": "If required, add to Section 1: 'The Confidential Information disclosed for the purposes of this Agreement relates specifically to [INSERT SPECIFIC PROJECT PURPOSE].' Ticket legal."
+      },
+      {
+        "clause": "Definition of Affiliates - Threshold Requirement",
+        "playbookSection": "Definition of Affiliates",
+        "severity": "negotiate",
+        "deviation": "Counterparty defines affiliated companies as those with 'majority interest, controlling interest or common management,' which narrows Bolt's standard definition without explicit 50% threshold language.",
+        "counterpartyText": "affiliated companies as those for which there is a majority interest, controlling interest or common management",
+        "talkingPoint": "Bolt's Affiliate definition is industry standard; narrowing it creates risk when disclosing Confidential Information. Control-based definitions may exclude entities Bolt needs to share with.",
+        "fallback": "May amend to: 'The term \"control\" means the possession, direct or indirect, of the power to direct or cause the direction of the management and policies of an entity, whether through the ownership of voting securities or otherwise.' Ticket legal."
+      },
+      {
+        "clause": "Scope of Application - Restricted Personnel",
+        "playbookSection": "Receiving Party Personnel Affiliates",
+        "severity": "negotiate",
+        "deviation": "Counterparty restricts information access to 'only those employees of a PARTY who have been designated to take part in the COOPERATION and have been asked to keep INFORMATION confidential,' more restrictive than Bolt standard.",
+        "counterpartyText": "only those employees of a PARTY who have been designated to take part in the COOPERATION",
+        "talkingPoint": "Bolt's Personnel definition is broader (employees, contractors, advisers, etc.) to permit necessary business sharing. Narrow restrictions impede business flexibility.",
+        "fallback": "None. Push back hard against exclusion of personnel categories Bolt may need to share with."
+      },
+      {
+        "clause": "Dissemination/Return of Confidential Information",
+        "playbookSection": "Return of Confidential Information",
+        "severity": "negotiate",
+        "deviation": "Counterparty requires return of all INFORMATION and copies 'immediately upon prompting...but no later than the end of the COOPERATION' with limited exceptions for legally required retention and routine electronic copies.",
+        "counterpartyText": "All INFORMATION...shall be issued to the transmitting PARTY immediately upon prompting...but no later than the end of the COOPERATION",
+        "talkingPoint": "Bolt maintains strong position against retaining another party's information post-relationship. Return/destruction obligation is standard to prevent subpoena/litigation risk.",
+        "fallback": "If counterparty has regulatory retention obligation, may add: 'Company may (i) retain the Confidential Information as required by law or regulatory obligation and (ii) copies on IT back-up systems.' Ticket legal. Include Section 8 in survival clause."
+      },
+      {
+        "clause": "Data Protection / GDPR Compliance",
+        "playbookSection": "Use and Disclosure of Confidential Information",
+        "severity": "negotiate",
+        "deviation": "Counterparty includes extensive GDPR/data processing obligations requiring Bolt (as subcontractor) to comply with data controller instructions, encryption, security measures, breach notification, and audit rights.",
+        "counterpartyText": "the supplier declares, as a subcontractor of Aspöck Portugal, that: (a) the processing of personal data shall be in accordance with the documented instructions of the controller",
+        "talkingPoint": "Bolt's NDA is not a data processing agreement. GDPR/data protection obligations require separate DPA. Conflating confidentiality with data processing creates compliance complexity.",
+        "fallback": "None within NDA context. Advise counterparty that personal data processing must be governed by separate Data Processing Agreement compliant with GDPR. Ticket legal."
+      },
+      {
+        "clause": "Liability Limitation",
+        "playbookSection": "Injunctive Relief",
+        "severity": "negotiate",
+        "deviation": "Counterparty states 'The transmitting PARTY shall not be liable for accuracy, absence of errors, completeness or the absence of property rights' and references 'valid tort law' for violations, potentially limiting liability exposure.",
+        "counterpartyText": "The transmitting PARTY shall not be liable for accuracy, absence of errors, completeness or the absence of property rights",
+        "talkingPoint": "Bolt seeks injunctive relief, not financial compensation, as primary remedy for breach. Limitation of liability clauses in NDAs (non-transactional documents with no money flow) are inappropriate.",
+        "fallback": "If liability cap is showstopper, escalate to legal through service desk for consideration."
+      },
+      {
+        "clause": "Contract Term and Confidentiality Duration",
+        "playbookSection": "Scope, Term, and Termination",
+        "severity": "negotiate",
+        "deviation": "Counterparty's confidentiality obligation expires 10 years after agreement completion, which exceeds Bolt's standard 3-year post-term protection but falls short of indefinite trade secret protection.",
+        "counterpartyText": "The obligation to confidentiality shall expire 10 years after this agreement / the COOPERATION is complete",
+        "talkingPoint": "Bolt standard is 3 years post-termination for confidentiality, with indefinite survival for trade secrets. 10-year term is longer than standard.",
+        "fallback": "Commercial discretion to accept 1, 2, 3, or 5 year terms. If indefinite trade secret protection desired, must identify specific information constituting trade secret; ticket legal."
+      },
+      {
+        "clause": "Governing Law and Jurisdiction",
+        "playbookSection": "Miscellaneous",
+        "severity": "negotiate",
+        "deviation": "Counterparty mandates Portuguese law and Portuguese courts (at ASPÖCK's corporate seat) as exclusive governing law and jurisdiction.",
+        "counterpartyText": "Portuguese law shall apply except in cases in which there is a conflict of laws. The place of jurisdiction is the court that has subject-matter jurisdiction at the corporate seat of ASPÖCK Portugal",
+        "talkingPoint": "Bolt standard is Estonian law and jurisdiction. Alternative jurisdictions accepted only where Bolt has established legal entity and only if necessary.",
+        "fallback": "Bolt may accept alternative jurisdiction if Bolt has legal entity established there. Estonia should remain first choice. Ticket legal for approval."
+      },
+      {
+        "clause": "No Consent Language on Dissemination",
+        "playbookSection": "Use and Disclosure of Confidential Information",
+        "severity": "hard_stop",
+        "deviation": "Counterparty requires 'Dissemination of this INFORMATION is permitted only after explicit written permission is granted by the transmitting PARTY,' restricting Bolt's ability to share with Affiliates and Personnel.",
+        "counterpartyText": "Dissemination of this INFORMATION is permitted only after explicit written permission is granted by the transmitting PARTY",
+        "talkingPoint": "Bolt requires ability to share with Affiliates and necessary Personnel without advance written permission for each disclosure. Obtaining permission for every disclosure creates operational impediment.",
+        "fallback": "None. Bolt's standard permits sharing with Affiliates and designated Personnel; prior written permission for each disclosure is not acceptable."
+      },
+      {
+        "clause": "Definition of Confidential Information - Marking Requirement",
+        "playbookSection": "Definition of Confidential Information",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA implicitly requires designation as confidential ('unless said information has been explicitly designated as NON-confidential'), shifting burden to transmitting party to mark information.",
+        "counterpartyText": "unless said information has been explicitly designated as 'NON-confidential' by the transmitting PARTY",
+        "talkingPoint": "Bolt does not accept marking requirements due to administrative burden on business. Internal practices do not consistently require confidentiality markings.",
+        "fallback": "Limited amendments possible with legal approval. Alternative: 'Information disclosed orally or visually identified at time as proprietary shall be covered if reduced to writing, marked confidential, and transmitted within thirty (30) days.' Ticket legal if agreed."
+      }
+    ]
+  },
+  {
+    "id": "ef141101-817c-49e5-9347-3f9185fad725",
+    "contractName": "1 - NDA_AspoeckSystems_Form2022_final_EN_ungeschuetzt_Portugal_bearbeitet_PT.docx",
+    "model": "claude-haiku-4-5-20251001",
+    "createdAt": "2026-03-29T00:51:45.536Z",
+    "issues": [
+      {
+        "clause": "Purpose",
+        "playbookSection": "Purpose",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA includes a defined purpose section specifying cooperation for manufacturing components/equipment or services, whereas Bolt standard does not require purpose designation.",
+        "counterpartyText": "ASPÖCK intends to engage [COMPANY] to manufacture components/equipaments or/and Services",
+        "talkingPoint": "Bolt considers all disclosed information confidential without requiring specific purpose designation, as long as confidentiality undertaking is maintained.",
+        "fallback": "Permissible amendment: add sentence at end of Section 1: 'The Confidential Information disclosed for the purposes of this Agreement relates specifically to [INSERT SPECIFIC PROJECT PURPOSE].'"
+      },
+      {
+        "clause": "Definition of Affiliates - Limited Scope",
+        "playbookSection": "Definition of Affiliates",
+        "severity": "hard_stop",
+        "deviation": "Counterparty restricts Affiliates to only those with 'majority interest, controlling interest or common management,' narrowing Bolt's broad affiliate definition.",
+        "counterpartyText": "affiliated companies as those for which there is a majority interest, controlling interest or common management",
+        "talkingPoint": "Bolt's flat and complex corporate structure requires unrestricted affiliate sharing; limiting affiliates forces permission requests and creates compliance risks.",
+        "fallback": null
+      },
+      {
+        "clause": "Definition of Confidential Information - Marking Requirement",
+        "playbookSection": "Definition of Confidential Information",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA implicitly requires information to be protected 'unless said information has been explicitly designated as NON-confidential,' suggesting unmarked information may be treated as non-confidential.",
+        "counterpartyText": "unless said information has been explicitly designated as 'NON-confidential' by the transmitting PARTY",
+        "talkingPoint": "Bolt does not accept marking requirements due to administrative burden; our standard permits protection of all non-public information regardless of marking.",
+        "fallback": "If deal-breaker: 'Information disclosed orally or visually and identified as proprietary shall be covered if reduced to writing, marked confidential, and transmitted within thirty (30) days.'"
+      },
+      {
+        "clause": "Scope of Personnel - Risk Reduction Language",
+        "playbookSection": "Receiving Party Personnel Affiliates",
+        "severity": "negotiate",
+        "deviation": "Counterparty limits disclosure to 'only those employees of a PARTY who have been designated to take part in the COOPERATION,' more restrictive than Bolt's broader personnel definition.",
+        "counterpartyText": "only those employees of a PARTY who have been designated to take part in the COOPERATION",
+        "talkingPoint": "Bolt needs broad personnel access including directors, officers, advisers, and contractors; narrow restrictions prevent business flexibility and expansion.",
+        "fallback": "If acceptable, may limit to designated personnel provided language permits extension to additional third parties as relationship evolves."
+      },
+      {
+        "clause": "Exclusions - Independently Developed Information",
+        "playbookSection": "Exclusions",
+        "severity": "acceptable",
+        "deviation": "Counterparty exclusion (d) covers information independently developed by employees with 'no access to confidential INFORMATION,' which is substantially consistent with Bolt standard.",
+        "counterpartyText": "independently developed by an employee of the other PARTY who had no access to confidentialINFORMATION",
+        "talkingPoint": "This standard exclusion aligns with Bolt playbook and is acceptable.",
+        "fallback": null
+      },
+      {
+        "clause": "Return and Destruction - Retention Exception",
+        "playbookSection": "Return of Confidential Information",
+        "severity": "negotiate",
+        "deviation": "Counterparty carves out information 'that, by law, must be stored by the receiving PARTY, nor to electronic copies made routinely that are deleted on a regular basis,' but applies only to return obligation, not destruction of active copies.",
+        "counterpartyText": "shall not apply to INFORMATION that, by law, must be stored by the receiving PARTY, nor to electronic copies made routinely",
+        "talkingPoint": "Bolt can accept non-return of information due to regulatory obligation provided confidentiality undertaking survives; routine backup copies are acceptable.",
+        "fallback": "Standard fallback permits retention if regulatory obligation is verified: 'Company may retain Confidential Information as required by law or regulatory obligation [including for audits] and copies held on IT back-up systems.'"
+      },
+      {
+        "clause": "Governmental Disclosure - No Notice Requirement",
+        "playbookSection": "Disclosures to Governmental Entities",
+        "severity": "negotiate",
+        "deviation": "Counterparty requires notification 'immediately prior to' disclosure to governmental entities, but does not permit disclosure if advance notice is impossible.",
+        "counterpartyText": "If the law dictates that INFORMATION must be disseminated, the transmitting PARTY shall always be notified of this obligation immediately prior",
+        "talkingPoint": "Bolt standard permits disclosure upon governmental order but requires notice 'as far as reasonably practicable,' recognizing that advance notice may be legally impossible.",
+        "fallback": "Acceptable amendment: add language permitting post-disclosure notice 'to the extent permitted by law, inform Bolt...as soon as reasonably practicable after such disclosure.'"
+      },
+      {
+        "clause": "Reverse Engineering Restriction",
+        "playbookSection": "Use and Disclosure of Confidential Information",
+        "severity": "hard_stop",
+        "deviation": "Counterparty explicitly prohibits 'reverse engineering' as part of exploitation prohibition; Bolt standard does not address reverse engineering in NDA context.",
+        "counterpartyText": "The prohibition on exploitation also includes issues of 'reverse engineering'",
+        "talkingPoint": "Bolt's standard NDA does not address reverse engineering; this is typically addressed in product development or license agreements, not NDAs. Adding this creates undefined scope.",
+        "fallback": null
+      },
+      {
+        "clause": "Data Protection - GDPR Subcontractor Obligations",
+        "playbookSection": "Miscellaneous",
+        "severity": "negotiate",
+        "deviation": "Counterparty imposes extensive GDPR subcontractor compliance obligations treating Bolt as data processor/subcontractor, not addressed in Bolt standard NDA template.",
+        "counterpartyText": "the supplier declares, as a subcontractor of Aspöck Portugal, that: (a) the processing of personal data shall be in accordance...",
+        "talkingPoint": "GDPR and data processing obligations should be addressed in separate Data Processing Addendum (DPA) or processor agreement, not in confidentiality NDA.",
+        "fallback": "Negotiate separate Data Processing Agreement; if GDPR terms must remain in NDA, escalate to legal for compliance review and potential DPA structuring."
+      },
+      {
+        "clause": "Term - 10 Year Confidentiality Obligation",
+        "playbookSection": "Scope, Term, and Termination",
+        "severity": "negotiate",
+        "deviation": "Counterparty imposes 10-year confidentiality obligation; Bolt playbook permits 1, 2, 3, or 5-year terms at commercial discretion.",
+        "counterpartyText": "The obligation to confidentiality shall expire 10 years after this agreement / the COOPERATION is complete",
+        "talkingPoint": "Bolt standard permits flexible terms from 1-5 years based on business need; 10 years extends significantly beyond typical commercial practice.",
+        "fallback": "Accept alternative term of 1, 2, 3, or 5 years at commercial discretion; if 10 years mandatory, escalate for legal approval."
+      },
+      {
+        "clause": "Warranties - No Liability Provision",
+        "playbookSection": "Warranties",
+        "severity": "acceptable",
+        "deviation": "Counterparty includes standard warranty disclaimer: 'shall not be liable for accuracy, absence of errors, completeness or...property rights,' consistent with Bolt standard.",
+        "counterpartyText": "The transmitting PARTY shall not be liable for accuracy, absence of errors, completeness or the absence of property rights",
+        "talkingPoint": "This warranty exclusion aligns with Bolt playbook position that Bolt will not warrant accuracy or completeness of Confidential Information.",
+        "fallback": null
+      },
+      {
+        "clause": "Jurisdiction and Governing Law",
+        "playbookSection": "Miscellaneous",
+        "severity": "negotiate",
+        "deviation": "Counterparty imposes Portuguese law and Portuguese courts as exclusive jurisdiction; Bolt standard prefers Estonia, with flexibility only where Bolt maintains legal entity.",
+        "counterpartyText": "Portuguese law shall apply except in cases in which there is a conflict of laws. The place of jurisdiction is the court...at the corporate seat of ASPÖCK Portugal",
+        "talkingPoint": "Bolt standard is Estonia law; Portuguese law acceptable only if Bolt has established legal entity there, which may not be the case.",
+        "fallback": "Bolt will accept alternative jurisdiction where Bolt has legal entity established if absolutely necessary; maintain push for Estonia as first choice."
+      },
+      {
+        "clause": "Dissemination - No Prior Written Permission Language",
+        "playbookSection": "Use and Disclosure of Confidential Information",
+        "severity": "hard_stop",
+        "deviation": "Counterparty requires 'explicit written permission' before any dissemination of information; Bolt standard permits disclosure to personnel and third parties under confidentiality obligations without case-by-case approval.",
+        "counterpartyText": "Dissemination of this INFORMATION is permitted only after explicit written permission is granted by the transmitting PARTY",
+        "talkingPoint": "Bolt requires freedom to share information with its personnel and Affiliates without seeking permission for each disclosure; this restriction prevents efficient operations.",
+        "fallback": null
+      }
+    ]
+  },
+  {
+    "id": "573dfd6a-c136-42d5-8abd-f0986f7d59ca",
+    "contractName": "1 - NDA_AspoeckSystems_Form2022_final_EN_ungeschuetzt_Portugal_bearbeitet_PT.docx",
+    "model": "claude-haiku-4-5-20251001",
+    "createdAt": "2026-03-29T01:17:37.213Z",
+    "issues": [
+      {
+        "clause": "Purpose",
+        "playbookSection": "Purpose",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA includes a specific 'PURPOSE' section requiring parties to designate cooperation purpose (manufacturing components/equipment or services), whereas Bolt standard does not require purpose designation.",
+        "counterpartyText": "ASPÖCK intends to engage to manufacture components/equipaments or/and Services (select one).",
+        "talkingPoint": "Bolt considers all disclosed information as Confidential Information without requiring specific purpose designation, as long as confidentiality undertaking is maintained.",
+        "fallback": "If necessary, add amendment: 'The Confidential Information disclosed for the purposes of this Agreement relates specifically to [INSERT SPECIFIC PROJECT PURPOSE]' with legal service desk ticket."
+      },
+      {
+        "clause": "Definition of Affiliates - Limitation of Affiliates",
+        "playbookSection": "Definition of Affiliates",
+        "severity": "negotiate",
+        "deviation": "Counterparty defines Affiliates narrowly as 'majority interest, controlling interest or common management' and restricts information sharing to only designated employees participating in cooperation, versus Bolt's broad affiliate sharing without entity limitations.",
+        "counterpartyText": "affiliated companies as those for which there is a majority interest, controlling interest or common management...only those employees designated to take part in the COOPERATION",
+        "talkingPoint": "Bolt's flat and complex corporate structure requires free information sharing among entities to conduct business; limiting to specific employees and narrow affiliate definitions creates operational friction and reputational risk.",
+        "fallback": null
+      },
+      {
+        "clause": "Definition of Confidential Information - Marking Requirement",
+        "playbookSection": "Definition of Confidential Information",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA requires information to be explicitly designated as 'NON-confidential' to exclude it, implying all other information is confidential by default; creates marking/designation burden.",
+        "counterpartyText": "unless said information has been explicitly designated as 'NON-confidential' by the transmitting PARTY",
+        "talkingPoint": "Bolt does not accept marking requirements due to administrative burden on business teams; our standard is that all disclosed information is confidential without designation.",
+        "fallback": "Limited amendments available; consider carving out defined purpose before accepting designation requirement, or propose oral/visual disclosure reduced to writing within 30 days."
+      },
+      {
+        "clause": "Exclusions - Governmental Disclosure",
+        "playbookSection": "Exclusions",
+        "severity": "hard_stop",
+        "deviation": "Counterparty requires notification to transmitting party 'immediately prior' to any legally mandated information dissemination, but does not provide exception for situations where prior notice is legally prohibited.",
+        "counterpartyText": "the transmitting PARTY shall always be notified of this obligation immediately prior to the impending dissemination",
+        "talkingPoint": "Confidentiality obligations survive government disclosures; requiring prior notice in all cases conflicts with legal duties where advance notice is prohibited.",
+        "fallback": "Add language: 'If Company is unable to inform Bolt before disclosure, it shall inform Bolt of full circumstances and information disclosed as soon as reasonably practicable after disclosure.'"
+      },
+      {
+        "clause": "Use and Disclosure - Export Regulations",
+        "playbookSection": "Use and Disclosure of Confidential Information",
+        "severity": "acceptable",
+        "deviation": "Counterparty NDA does not include export regulation language; Bolt standard playbook suggests adding this clause.",
+        "counterpartyText": "No export regulation language present",
+        "talkingPoint": "Bolt should propose adding export compliance language to protect against unauthorized export of Confidential Information.",
+        "fallback": "Propose: 'The Receiving Party will not export any Confidential Information in any manner contrary to the export regulations of the United States or the applicable jurisdiction of the relevant Receiving Party.'"
+      },
+      {
+        "clause": "Receiving Party Personnel - Narrow Definition",
+        "playbookSection": "Receiving Party Personnel Affiliates",
+        "severity": "hard_stop",
+        "deviation": "Counterparty restricts information access to only 'employees of a PARTY who have been designated to take part in the COOPERATION' versus Bolt's broad personnel definition including officers, agents, advisers, investment banks, and controlled entities.",
+        "counterpartyText": "only those employees of a PARTY who have been designated to take part in the COOPERATION...shall receive said INFORMATION",
+        "talkingPoint": "Bolt requires broad personnel definition to share information across business teams, legal/financial advisers, and controlled entities; narrow restrictions limit operational flexibility and future business expansion.",
+        "fallback": null
+      },
+      {
+        "clause": "Return of Confidential Information - Retention Obligations",
+        "playbookSection": "Return of Confidential Information",
+        "severity": "negotiate",
+        "deviation": "Counterparty requires return/destruction of all information 'immediately upon prompting...no later than end of COOPERATION' with only narrow exceptions for legally required retention and routine electronic backups; does not address regulatory/professional obligation retention.",
+        "counterpartyText": "All INFORMATION...shall be issued to the transmitting PARTY immediately upon prompting...but no later than the end of the COOPERATION",
+        "talkingPoint": "Bolt accepts non-return where regulatory or professional obligations exist; confidentiality obligations continue to survive; narrow exceptions may not cover all Bolt's legitimate retention needs.",
+        "fallback": "Propose addition: 'Company may retain Confidential Information as required by law or regulatory obligation and copies held on IT back-up systems, with confidentiality obligations surviving 3 years post-termination.'"
+      },
+      {
+        "clause": "Term of Confidentiality Obligation",
+        "playbookSection": "Scope, Term, and Termination",
+        "severity": "negotiate",
+        "deviation": "Counterparty sets confidentiality obligation duration at 10 years post-cooperation completion, versus Bolt standard of 3 years with indefinite protection for trade secrets.",
+        "counterpartyText": "The obligation to confidentiality shall expire 10 years after this agreement / the COOPERATION is complete",
+        "talkingPoint": "Bolt's standard is 3-year confidentiality term post-termination with indefinite survival for trade secrets; 10-year term is commercially longer than Bolt standard.",
+        "fallback": "Negotiate to Bolt standard of 1-5 years at commercial discretion, with indefinite trade secret protection if information identified as such."
+      },
+      {
+        "clause": "Governing Law and Jurisdiction",
+        "playbookSection": "Miscellaneous",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA specifies Portuguese law and Portuguese jurisdiction (Aspöck Portugal's corporate seat) versus Bolt standard preference for Estonia law.",
+        "counterpartyText": "Portuguese law shall apply...The place of jurisdiction is the court that has subject-matter jurisdiction at the corporate seat of ASPÖCK Portugal",
+        "talkingPoint": "Bolt standard is Estonia law; Portugal is acceptable only if Bolt has established legal entity there.",
+        "fallback": "Accept alternative jurisdiction where Bolt has legal entity established if absolutely necessary; otherwise maintain Estonia as first choice."
+      },
+      {
+        "clause": "Warranties",
+        "playbookSection": "Warranties",
+        "severity": "acceptable",
+        "deviation": "Counterparty includes warranty disclaimer that transmitting party is not liable for accuracy, completeness, absence of errors, or property rights to information, which aligns with Bolt's position against warranties.",
+        "counterpartyText": "The transmitting PARTY shall not be liable for accuracy, absence of errors, completeness or the absence of property rights",
+        "talkingPoint": "Counterparty's warranty exclusion aligns with Bolt standard; no negotiation needed.",
+        "fallback": null
+      },
+      {
+        "clause": "GDPR/Data Protection Compliance",
+        "playbookSection": "Miscellaneous",
+        "severity": "negotiate",
+        "deviation": "Counterparty includes extensive GDPR subcontractor obligations and data processor language (Sections 1-3 under 'Compliance with general regulation of protection data') which goes beyond standard NDA and imposes data processor responsibilities not in Bolt playbook.",
+        "counterpartyText": "the supplier declares, as a subcontractor of Aspöck Portugal...processing of personal data shall be in accordance with documented instructions...ensures persons authorized to process personal data have assumed commitment of confidentiality",
+        "talkingPoint": "GDPR processor language belongs in a Data Processing Agreement (DPA), not in an NDA; this creates confusion of roles and obligations outside NDA scope.",
+        "fallback": "Propose removing GDPR processor language from NDA and addressing in separate DPA if data processing relationship exists; or clarify that NDA applies only to non-personal information."
+      },
+      {
+        "clause": "Injunctive Relief",
+        "playbookSection": "Injunctive Relief",
+        "severity": "acceptable",
+        "deviation": "Counterparty NDA does not explicitly address injunctive relief or include limitation of liability caps, which aligns with Bolt standard position against liability limitations.",
+        "counterpartyText": "The valid tort law shall be applicable if there are violations to this agreement",
+        "talkingPoint": "Counterparty has not proposed liability caps; Bolt's position against limitations is maintained.",
+        "fallback": null
+      },
+      {
+        "clause": "Penalties",
+        "playbookSection": "Penalties",
+        "severity": "acceptable",
+        "deviation": "Counterparty NDA does not include penalty clauses, which aligns with Bolt's standard position against penalties in NDAs.",
+        "counterpartyText": "No penalty clauses present",
+        "talkingPoint": "No penalties proposed; aligns with Bolt standard.",
+        "fallback": null
+      }
+    ]
+  },
+  {
+    "id": "37b53828-c04c-4fa0-ae4a-6bbf7e9c0491",
+    "contractName": "1 - NDA_AspoeckSystems_Form2022_final_EN_ungeschuetzt_Portugal_bearbeitet_PT.docx",
+    "model": "claude-haiku-4-5-20251001",
+    "createdAt": "2026-03-29T01:28:24.649Z",
+    "issues": [
+      {
+        "clause": "Purpose",
+        "playbookSection": "Purpose",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA includes a specific Purpose section requiring designation of cooperation type (manufacture/services), whereas Bolt standard does not require a designated purpose.",
+        "counterpartyText": "ASPÖCK intends to engage to manufacture components/equipaments or/and Services (select one).",
+        "talkingPoint": "Bolt does not require parties to specifically designate a purpose for disclosure as long as confidentiality undertaking is maintained.",
+        "fallback": "Add at end of Section 1: 'The Confidential Information disclosed for the purposes of this Agreement relates specifically to [INSERT SPECIFIC PROJECT PURPOSE].'"
+      },
+      {
+        "clause": "Definition of Affiliates",
+        "playbookSection": "Definition of Affiliates",
+        "severity": "negotiate",
+        "deviation": "Counterparty limits Affiliates to entities with 'majority interest, controlling interest or common management,' whereas Bolt standard uses broader control-based definition without ownership threshold.",
+        "counterpartyText": "affiliated companies as those for which there is a majority interest, controlling interest or common management",
+        "talkingPoint": "Bolt's definition based on control (not ownership percentage) is industry standard; ownership thresholds create risks when control exists without stated ownership.",
+        "fallback": "Amend to: 'The term \"control\" means the possession, direct or indirect, of the power to direct or cause the direction of the management and policies of an entity, whether through the ownership of voting securities or otherwise.'"
+      },
+      {
+        "clause": "Definition of Confidential Information - Marking Requirement",
+        "playbookSection": "Definition of Confidential Information",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA requires information be 'explicitly designated as NON-confidential' to exclude it, implying all non-designated information is confidential; Bolt standard does not impose marking requirements on disclosing party.",
+        "counterpartyText": "unless said information has been explicitly designated as 'NON-confidential' by the transmitting PARTY",
+        "talkingPoint": "Bolt does not accept marking/designation requirements due to administrative burden on business owners; internal policies do not establish this practice consistently.",
+        "fallback": "Propose alternative: 'Information disclosed orally or visually and identified at time as proprietary or confidential shall be covered if reduced to writing, marked confidential, and transmitted within thirty (30) days after disclosure.'"
+      },
+      {
+        "clause": "Exclusions - Third Party Disclosure",
+        "playbookSection": "Exclusions",
+        "severity": "negotiate",
+        "deviation": "Counterparty clause (c) states information 'mostly INFORMATION that was made accessible to the other PARTY by an authorized third party' creates ambiguity; Bolt standard requires clarity on wrongful/tortious disclosure.",
+        "counterpartyText": "mostly INFORMATION that was made accessible to the other PARTY by an authorized third party",
+        "talkingPoint": "Breach of separate agreement is covered by 'wrongful'; need clear language on tortious acts and breach of confidentiality obligations.",
+        "fallback": "Amend to: '(iii) is disclosed to the Receiving Party from a third party, except where the Receiving Party knows or reasonably should know, that (a) such disclosure constitutes a wrongful or tortious act or (b) such information was acquired or disclosed in breach of an obligation of confidentiality.'"
+      },
+      {
+        "clause": "Receiving Party Personnel - Scope of Permitted Recipients",
+        "playbookSection": "Receiving Party Personnel Affiliates",
+        "severity": "negotiate",
+        "deviation": "Counterparty limits disclosure to employees 'designated to take part in the COOPERATION and have been asked to keep INFORMATION confidential,' whereas Bolt standard permits broader disclosure to personnel, advisers, and consultants.",
+        "counterpartyText": "only those employees of a PARTY who have been designated to take part in the COOPERATION and have been asked to keep INFORMATION confidential",
+        "talkingPoint": "Bolt needs flexibility to share with employees, contractors, advisers, legal/financial consultants; narrow definition limits business operations and future expansion.",
+        "fallback": "None"
+      },
+      {
+        "clause": "Return and Destruction of Confidential Information",
+        "playbookSection": "Return of Confidential Information",
+        "severity": "negotiate",
+        "deviation": "Counterparty requires return of all information and copies 'immediately upon prompting...but no later than end of COOPERATION' with limited exceptions for legally required retention; Bolt standard permits retention with conditions.",
+        "counterpartyText": "All INFORMATION...shall be issued to the transmitting PARTY immediately upon prompting...but no later than the end of the COOPERATION",
+        "talkingPoint": "Bolt accepts non-return only if receiving party has regulatory/professional obligation; confidentiality undertaking continues to survive.",
+        "fallback": "May add: 'Company may (i) retain the Confidential Information as required by law or regulatory obligation and (ii) copies on IT back-up systems.' Include Section 8 survival for 3 years post-termination."
+      },
+      {
+        "clause": "Term and Confidentiality Duration",
+        "playbookSection": "Scope, Term, and Termination",
+        "severity": "negotiate",
+        "deviation": "Counterparty sets confidentiality obligation term at 10 years post-cooperation completion; Bolt standard is typically 3 years with option for 1-5 years at discretion.",
+        "counterpartyText": "The obligation to confidentiality shall expire 10 years after this agreement / the COOPERATION is complete.",
+        "talkingPoint": "Bolt has commercial discretion on term length; 10 years exceeds standard playbook options.",
+        "fallback": "Accept term of one, two, three, or five years at commercial discretion; escalate 10-year requirement if business-critical."
+      },
+      {
+        "clause": "Data Protection and GDPR Compliance",
+        "playbookSection": "Use and Disclosure of Confidential Information",
+        "severity": "acceptable",
+        "deviation": "Counterparty includes detailed GDPR/personal data processing obligations requiring subcontractor compliance; Bolt standard NDA does not address data protection as primary focus.",
+        "counterpartyText": "The supplier declares, as a subcontractor of Aspöck Portugal, that: (a) the processing of personal data shall be in accordance with documented instructions...",
+        "talkingPoint": "This is supplementary data protection language that aligns with EU regulatory requirements and does not conflict with Bolt's NDA obligations.",
+        "fallback": null
+      },
+      {
+        "clause": "Governing Law and Jurisdiction",
+        "playbookSection": "Miscellaneous",
+        "severity": "negotiate",
+        "deviation": "Counterparty mandates Portuguese law and jurisdiction at Aspöck Portugal's corporate seat; Bolt standard is Estonia law and jurisdiction.",
+        "counterpartyText": "Portuguese law shall apply except in cases in which there is a conflict of laws. The place of jurisdiction is the court that has subject-matter jurisdiction at the corporate seat of ASPÖCK Portugal.",
+        "talkingPoint": "Bolt standard should always be Estonia; alternative jurisdiction only where Bolt has legal entity established.",
+        "fallback": "Accept alternative jurisdiction if Bolt has legal entity established; otherwise escalate to legal service desk."
+      },
+      {
+        "clause": "Non-Transactional Nature and Limitation of Liability",
+        "playbookSection": "Injunctive Relief",
+        "severity": "acceptable",
+        "deviation": "Counterparty disclaims liability for accuracy, completeness, or third-party IP rights and applies 'valid tort law' for violations; Bolt standard allows no liability limitations but focuses on injunctive relief.",
+        "counterpartyText": "The transmitting PARTY shall not be liable for accuracy, absence of errors, completeness or the absence of property rights...The valid tort law shall be applicable if there are violations.",
+        "talkingPoint": "Counterparty liability disclaimer is acceptable as Bolt also does not warrant accuracy/completeness; tort law remedies align with Bolt's injunctive relief focus.",
+        "fallback": null
+      },
+      {
+        "clause": "No Penalties or Liquidated Damages",
+        "playbookSection": "Penalties",
+        "severity": "acceptable",
+        "deviation": "Counterparty NDA contains no penalty or liquidated damages clauses, aligning with Bolt standard position against penalties.",
+        "counterpartyText": "No penalty clauses present in counterparty NDA",
+        "talkingPoint": "Counterparty position aligns with Bolt standard which does not apply penalties to NDAs.",
+        "fallback": null
+      },
+      {
+        "clause": "Warranties Disclaimer",
+        "playbookSection": "Warranties",
+        "severity": "acceptable",
+        "deviation": "Counterparty explicitly disclaims liability for accuracy, errors, completeness, and usability of Confidential Information, consistent with Bolt's non-warranty position.",
+        "counterpartyText": "The transmitting PARTY shall not be liable for accuracy, absence of errors, completeness or the absence of property rights to this INFORMATION",
+        "talkingPoint": "Counterparty warranty exclusion aligns with Bolt standard refusal to warrant accuracy/completeness of disclosed information.",
+        "fallback": null
+      }
+    ]
+  },
+  {
+    "id": "e1b553bb-ea3b-4b9d-a724-fd36982ac8b8",
+    "contractName": "1 - NDA_AspoeckSystems_Form2022_final_EN_ungeschuetzt_Portugal_bearbeitet_PT.docx",
+    "model": "claude-haiku-4-5-20251001",
+    "createdAt": "2026-03-29T01:47:29.712Z",
+    "issues": [
+      {
+        "clause": "Other party queries the use of Bolt Operations OU as the signatory",
+        "playbookSection": "Preamble",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA names 'Aspöck Portugal SA' as one party and leaves Bolt entity blank, creating ambiguity about which Bolt entity is contracting",
+        "counterpartyText": "concluded between Aspöck Portugal SA... and NIF/VAT NR.: [blank] hereinafter referred to as 'COMPANY'",
+        "talkingPoint": "Bolt requires that all third parties contract with Bolt Operations OÜ as the main operating entity to ensure confidential information can be shared across the Bolt group",
+        "fallback": "At commercial discretion, another Bolt group company may be used, but this results in narrower scope covering only local subsidiary sharing"
+      },
+      {
+        "clause": "The other party wants a purpose included in the NDA",
+        "playbookSection": "Purpose",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA explicitly ties the agreement to a specific 'COOPERATION' purpose (manufacturing components/services), limiting scope beyond general business relationship",
+        "counterpartyText": "In view of this planned COOPERATION it can be necessary to make confidential information available to each other. The purpose of this agreement is to stipulate how INFORMATION is to be handled",
+        "talkingPoint": "Bolt considers all disclosed information as Confidential Information regardless of designated purpose, allowing flexibility for evolving business needs",
+        "fallback": "A specific project purpose may be added as amendment: 'The Confidential Information disclosed for the purposes of this Agreement relates specifically to [INSERT SPECIFIC PROJECT PURPOSE]' with legal ticket"
+      },
+      {
+        "clause": "Other party requests to identify either or both parties' Affiliates",
+        "playbookSection": "Definition of Affiliates",
+        "severity": "hard_stop",
+        "deviation": "Counterparty defines 'affiliated companies' narrowly as those with 'majority interest, controlling interest or common management', requiring explicit identification",
+        "counterpartyText": "affiliated companies as those for which there is a majority interest, controlling interest or common management",
+        "talkingPoint": "Bolt cannot accept the administrative burden of listing hundreds of subsidiaries; Affiliate definition must remain standard and flexible",
+        "fallback": null
+      },
+      {
+        "clause": "Other party requests to add threshold (50%) for Affiliates",
+        "playbookSection": "Definition of Affiliates",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA requires 'majority interest' threshold for Affiliates rather than industry-standard control-based definition",
+        "counterpartyText": "affiliated companies as those for which there is a majority interest, controlling interest or common management",
+        "talkingPoint": "Bolt's Affiliate definition is based on industry standard 'control' which includes scenarios with control but no ownership; 'majority interest' creates protection gaps",
+        "fallback": "Amend to define control as: 'possession, direct or indirect, of the power to direct or cause the direction of the management and policies of an entity, whether through the ownership of voting securities or otherwise' with legal ticket"
+      },
+      {
+        "clause": "Other party wishes to modify, add, or delete the exclusions section",
+        "playbookSection": "Exclusions",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA Exclusions section (items a-d) differs from Bolt standard and omits standard carve-outs; notably missing 'wrongful disclosure' language",
+        "counterpartyText": "a) known to the other PARTY prior to being disseminated; b) known to the public; c) accessible by authorized third party; d) independently developed",
+        "talkingPoint": "Bolt's Exclusions section must remain intact to ensure proper handling of information that doesn't qualify as confidential",
+        "fallback": null
+      },
+      {
+        "clause": "Other party wants to add a disclosure to governmental entities under the Exclusions",
+        "playbookSection": "Exclusions",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA permits disclosure to governmental entities without carving them from confidentiality: 'If the law dictates that INFORMATION must be disseminated, the transmitting PARTY shall always be notified'",
+        "counterpartyText": "If the law dictates that INFORMATION must be disseminated, the transmitting PARTY shall always be notified of this obligation immediately",
+        "talkingPoint": "Confidentiality obligations must survive even when disclosing under governmental order to protect trade secret status; disclosure to government entities cannot be excluded",
+        "fallback": null
+      },
+      {
+        "clause": "Other party wishes to add further protection language",
+        "playbookSection": "Use and Disclosure of Confidential Information",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA adds GDPR/RGPD data protection compliance obligations (Section: 'Compliance with the general regulation of protection data') imposing extensive subcontractor obligations beyond standard NDA scope",
+        "counterpartyText": "the supplier declares, as a subcontractor of Aspöck Portugal, that: (a) the processing of personal data shall be in accordance with the documented instructions of the controller",
+        "talkingPoint": "Bolt's standard NDA addresses confidentiality only; GDPR/data processing obligations belong in separate Data Processing Agreement, not NDA",
+        "fallback": null
+      },
+      {
+        "clause": "Other party requires penalties in the NDA",
+        "playbookSection": "Penalties",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA states 'The valid tort law shall be applicable if there are violations to this agreement', implying penalties/damages framework",
+        "counterpartyText": "The valid tort law shall be applicable if there are violations to this agreement",
+        "talkingPoint": "Bolt does not apply penalty clauses to low-risk NDAs; tort law remedies are secondary to injunctive relief which is the appropriate remedy",
+        "fallback": null
+      },
+      {
+        "clause": "The other party wants to change the term of the NDA to less than three (3) years",
+        "playbookSection": "Scope, Term, and Termination",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA provides only 10-year post-termination confidentiality obligation: 'The obligation to confidentiality shall expire 10 years after this agreement / the COOPERATION is complete'",
+        "counterpartyText": "The obligation to confidentiality shall expire 10 years after this agreement / the COOPERATION is complete",
+        "talkingPoint": "Bolt standard provides minimum 3-year term during agreement with indefinite survival for trade secrets; 10-year post-termination is acceptable",
+        "fallback": "You may accept a term of one, two, three, or five years at your commercial discretion"
+      },
+      {
+        "clause": "Other party wants Bolt to warrant the accuracy and completeness of the Confidential Information",
+        "playbookSection": "Warranties",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA explicitly disclaims Bolt's liability: 'The transmitting PARTY shall not be liable for accuracy, absence of errors, completeness or the absence of property rights to this INFORMATION'",
+        "counterpartyText": "The transmitting PARTY shall not be liable for accuracy, absence of errors, completeness or the absence of property rights",
+        "talkingPoint": "Bolt will not warrant accuracy/completeness as NDA covers broad business discussions not tied to specific purpose; information evolves as business innovates",
+        "fallback": null
+      },
+      {
+        "clause": "Other party wants the NDA to be pursuant to their local law",
+        "playbookSection": "Miscellaneous",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA imposes Portuguese law and jurisdiction: 'Portuguese law shall apply... The place of jurisdiction is the court that has subject-matter jurisdiction at the corporate seat of ASPÖCK Portugal'",
+        "counterpartyText": "Portuguese law shall apply except in cases in which there is a conflict of laws. The place of jurisdiction is the court... at the corporate seat of ASPÖCK Portugal",
+        "talkingPoint": "Bolt standard is Estonia; Portuguese law creates compliance risk and unfamiliar legal framework",
+        "fallback": "Bolt will accept alternative jurisdiction only where Bolt has legal entity established; escalate if necessary"
+      },
+      {
+        "clause": "Other party wishes to make the NDA freely assignable",
+        "playbookSection": "Miscellaneous",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA contains no assignment clause, leaving it unclear whether either party can assign; standard practice requires consent restrictions",
+        "counterpartyText": "No assignment clause present in counterparty NDA",
+        "talkingPoint": "Bolt requires consent for assignment to non-Affiliate third parties to prevent unknown parties from enforcing obligations",
+        "fallback": "Allow assignment to a purchaser/acquiring entity with consent requirement for other assignments; escalate for legal ticket"
+      },
+      {
+        "clause": "If agreement includes any other clause which is not part of the above topics",
+        "playbookSection": "Not part of this contract",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA includes comprehensive GDPR/RGPD data processing obligations and subcontractor framework that extends beyond standard NDA scope into DPA territory",
+        "counterpartyText": "Compliance with the general regulation of protection data and consequences [full section on subcontractor obligations under RGPD]",
+        "talkingPoint": "Data protection/processing obligations must be addressed in separate Data Processing Agreement, not embedded in NDA",
+        "fallback": null
+      }
+    ]
+  },
+  {
+    "id": "2350c62f-90ba-4257-ba26-031b7fbef1ac",
+    "contractName": "1 - NDA_AspoeckSystems_Form2022_final_EN_ungeschuetzt_Portugal_bearbeitet_PT.docx",
+    "model": "claude-haiku-4-5-20251001",
+    "createdAt": "2026-03-29T01:54:37.983Z",
+    "issues": [
+      {
+        "clause": "Purpose",
+        "playbookSection": "Purpose",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA includes a specific PURPOSE section that ties confidential information disclosure to stated cooperation objectives (manufacturing components/services), whereas Bolt standard does not require purpose limitation.",
+        "counterpartyText": "ASPÖCK intends to engage to manufacture components/equipaments or/and Services (select one).",
+        "talkingPoint": "Bolt discloses information under ongoing business relationship, not limited to specific purposes. All disclosed information is treated as Confidential Information.",
+        "fallback": "If required, add: 'The Confidential Information disclosed for the purposes of this Agreement relates specifically to [INSERT SPECIFIC PROJECT PURPOSE].' Make service desk ticket to legal."
+      },
+      {
+        "clause": "Definition of Affiliates - threshold and control definition",
+        "playbookSection": "Definition of Affiliates",
+        "severity": "negotiate",
+        "deviation": "Counterparty defines Affiliates as entities with 'majority interest, controlling interest or common management' rather than Bolt's standard control definition, which includes indirect control and management direction.",
+        "counterpartyText": "affiliated companies as those for which there is a majority interest, controlling interest or common management",
+        "talkingPoint": "Bolt's flat and complex corporate structure requires broad Affiliate definition based on control, not ownership thresholds. Need freedom to share across entities without permission.",
+        "fallback": "Amend to: 'The term \"control\" means the possession, direct or indirect, of the power to direct or cause the direction of the management and policies of an entity, whether through the ownership of voting securities or otherwise.' Make service desk ticket to legal."
+      },
+      {
+        "clause": "Use and Disclosure - Prior Written Permission Required",
+        "playbookSection": "Use and Disclosure of Confidential Information",
+        "severity": "hard_stop",
+        "deviation": "Counterparty requires explicit written permission from transmitting party for any dissemination of information, restricting Bolt's ability to share with Affiliates and third parties on need-to-know basis.",
+        "counterpartyText": "Dissemination of this INFORMATION is permitted only after explicit written permission is granted by the transmitting PARTY.",
+        "talkingPoint": "Bolt's broad definition of Confidential Information already permits disclosure to third parties and Affiliates. Permission requirement creates operational burden and impedes business flexibility.",
+        "fallback": null
+      },
+      {
+        "clause": "Personnel and Third Party Disclosure",
+        "playbookSection": "Receiving Party Personnel Affiliates",
+        "severity": "negotiate",
+        "deviation": "Counterparty limits information receipt to only designated employees of a party who have been 'asked to keep INFORMATION confidential,' more restrictive than Bolt standard which includes broader Personnel categories.",
+        "counterpartyText": "only those employees of a PARTY who have been designated to take part in the COOPERATION and have been asked to keep INFORMATION confidential",
+        "talkingPoint": "Bolt standard includes directors, officers, agents, legal and financial advisers. Restricting to designated employees only limits our ability to use information as business requires.",
+        "fallback": null
+      },
+      {
+        "clause": "Governing Law and Jurisdiction",
+        "playbookSection": "Miscellaneous",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA specifies Portuguese law and exclusive jurisdiction at Aspöck Portugal's corporate seat, whereas Bolt standard requires Estonia or a jurisdiction where Bolt has legal entity.",
+        "counterpartyText": "Portuguese law shall apply except in cases in which there is a conflict of laws. The place of jurisdiction is the court that has subject-matter jurisdiction at the corporate seat of ASPÖCK Portugal.",
+        "talkingPoint": "Bolt standard is Estonia. Agreement to non-Bolt jurisdiction exposes Bolt to unfamiliar legal environment and counterparty home court advantage.",
+        "fallback": "Bolt will accept alternative jurisdiction where Bolt has legal entity established if absolutely necessary. Make legal service desk ticket."
+      },
+      {
+        "clause": "Term and Confidentiality Obligation Duration",
+        "playbookSection": "Scope, Term, and Termination",
+        "severity": "negotiate",
+        "deviation": "Counterparty specifies confidentiality obligation expires 10 years after agreement/cooperation completion, whereas Bolt standard is typically 3 years with indefinite trade secret protection.",
+        "counterpartyText": "The obligation to confidentiality shall expire 10 years after this agreement / the COOPERATION is complete.",
+        "talkingPoint": "10-year obligation exceeds Bolt standard of 3 years. Indefinite trade secret protection is preferable and industry standard.",
+        "fallback": "You may accept a term of one, two, three, or five years at your commercial discretion. Alternatively, propose indefinite trade secret protection for identified trade secrets."
+      },
+      {
+        "clause": "Return/Destruction of Information - Regulatory Carve-out Language",
+        "playbookSection": "Return of Confidential Information",
+        "severity": "negotiate",
+        "deviation": "Counterparty's return obligation excludes information 'that, by law, must be stored by the receiving PARTY' and 'electronic copies made routinely that are deleted on a regular basis,' but does not explicitly preserve confidentiality obligations for retained information.",
+        "counterpartyText": "This obligation shall not apply to INFORMATION that, by law, must be stored by the receiving PARTY, nor to electronic copies made routinely",
+        "talkingPoint": "Bolt accepts non-return for regulatory/legal obligations IF confidentiality undertaking survives. Must clarify that survival of confidentiality is required.",
+        "fallback": "Add language: 'Unless otherwise agreed by Bolt, Company may (i) retain the Confidential Information as required by law or a regulatory obligation and (ii) copies on IT backup systems. Confidentiality obligations shall survive for 3 years following termination.' Make service desk ticket to legal."
+      },
+      {
+        "clause": "Data Protection Compliance (GDPR/RGPD)",
+        "playbookSection": "Not part of this contract",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA includes extensive Data Protection Regulation (RGPD/GDPR) subcontractor obligations and DPA terms integrated into the NDA, which is not part of Bolt's standard NDA.",
+        "counterpartyText": "The supplier declares, as a subcontractor of Aspöck Portugal, that: (a) the processing of personal data shall be in accordance with documented instructions of the controller...",
+        "talkingPoint": "Data protection and DPA obligations should not be embedded in an NDA. These require separate Data Processing Agreement with appropriate safeguards and allocation of responsibilities.",
+        "fallback": null
+      },
+      {
+        "clause": "Reverse Engineering Prohibition",
+        "playbookSection": "Ownership of Confidential Information",
+        "severity": "negotiate",
+        "deviation": "Counterparty explicitly prohibits 'reverse engineering' of information, which is beyond typical NDA scope and creates additional IP usage restrictions not in Bolt standard.",
+        "counterpartyText": "The prohibition on exploitation also includes issues of \"reverse engineering\".",
+        "talkingPoint": "Reverse engineering prohibition is overly broad and creates operational constraints. Standard NDA covers use restrictions without explicit reverse engineering language.",
+        "fallback": "This can be negotiated based on commercial context. Make service desk ticket to legal for evaluation."
+      },
+      {
+        "clause": "Signatories - Missing Entity Identification",
+        "playbookSection": "Preamble",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA leaves COMPANY entity details blank ('NIF/VAT NR.:') and does not specify which Bolt entity should execute the agreement.",
+        "counterpartyText": "NIF/VAT NR.: [blank]",
+        "talkingPoint": "Bolt requires Bolt Operations OÜ as signatory to ensure group-wide information sharing and Affiliate protection. Must confirm correct Bolt entity before execution.",
+        "fallback": "Preferably maintain Bolt Operations OÜ. If deal-breaker, may use another Bolt group company at commercial discretion, but results in narrower scope."
+      }
+    ]
+  },
+  {
+    "id": "8e5121f5-0243-467b-af66-18222bbf617c",
+    "contractName": "1 - NDA_AspoeckSystems_Form2022_final_EN_ungeschuetzt_Portugal_bearbeitet_PT.docx",
+    "model": "claude-haiku-4-5-20251001",
+    "createdAt": "2026-03-29T01:59:23.857Z",
+    "issues": [
+      {
+        "clause": "Other party requests to add threshold for Affiliates",
+        "playbookSection": "Definition of Affiliates",
+        "severity": "negotiate",
+        "deviation": "Counterparty defines affiliated companies as those with 'majority interest, controlling interest or common management' rather than Bolt's broader control standard",
+        "counterpartyText": "affiliated companies as those for which there is a majority interest, controlling interest or common management",
+        "talkingPoint": "Bolt's control-based definition (possession of power to direct management) is industry standard and necessary given fluid corporate structures",
+        "fallback": "Amend to state: 'The term \"control\" means the possession, direct or indirect, of the power to direct or cause the direction of the management and policies of an entity, whether through the ownership of voting securities or otherwise.'"
+      },
+      {
+        "clause": "Other party wants all Personnel to execute written nondisclosure agreements",
+        "playbookSection": "Receiving Party Personnel Affiliates",
+        "severity": "negotiate",
+        "deviation": "Counterparty requires all employees receiving information must be 'asked to keep INFORMATION confidential' implying written NDAs are mandatory",
+        "counterpartyText": "employees who have been designated to take part and asked to keep INFORMATION confidential",
+        "talkingPoint": "Bolt employees and contractors already sign NDAs; broader parties should have reasonable access under party responsibility without individual execution",
+        "fallback": "Propose addition: 'and (iv) in the case of a Receiving Party's employees and contractors, who have executed written nondisclosure agreements obligating them to protect the Confidential Information.'"
+      },
+      {
+        "clause": "Other party requests to supersede or invalidate a previous NDA",
+        "playbookSection": "Miscellaneous",
+        "severity": "negotiate",
+        "deviation": "Agreement states 'There are no verbal supplementary agreements. Any changes and amendments must be in writing' which could imply supersession of prior NDAs",
+        "counterpartyText": "There are no verbal supplementary agreements. Any changes and amendments must be in writing.",
+        "talkingPoint": "Necessity for supersession language should be evaluated case by case",
+        "fallback": "Make a legal service desk ticket to evaluate if this NDA is intended to replace any prior NDA between parties"
+      },
+      {
+        "clause": "Other party wants the NDA to be pursuant to their local law",
+        "playbookSection": "Miscellaneous",
+        "severity": "negotiate",
+        "deviation": "Counterparty specifies Portuguese law and Portuguese courts as governing law and jurisdiction",
+        "counterpartyText": "Portuguese law shall apply...The place of jurisdiction is the court...at the corporate seat of ASPÖCK Portugal",
+        "talkingPoint": "Bolt standard is Estonia; will only accept alternative jurisdiction if Bolt has legal entity established there",
+        "fallback": "Bolt will accept alternative jurisdiction where Bolt has a legal entity established if absolutely necessary"
+      },
+      {
+        "clause": "Party does not accept pet-related provisions",
+        "playbookSection": "If has 🐈",
+        "severity": "hard_stop",
+        "deviation": "Counterparty states 'WE DO NOT LIKE PETS' which violates Bolt's requirement for pet-friendly terms",
+        "counterpartyText": "WE DO NOT LIKE PETS",
+        "talkingPoint": "Bolt values pet-friendly companies and this represents a fundamental cultural misalignment",
+        "fallback": null
+      },
+      {
+        "clause": "Other party includes GDPR/Data Protection Obligations outside standard NDA scope",
+        "playbookSection": "Not part of this contract",
+        "severity": "hard_stop",
+        "deviation": "Counterparty includes extensive GDPR data processor obligations and requirements that go beyond standard NDA confidentiality",
+        "counterpartyText": "Compliance with the general regulation of protection data and consequences [entire section detailing GDPR processor obligations]",
+        "talkingPoint": "Data protection and GDPR processor terms should be addressed in separate Data Processing Agreement, not within the NDA",
+        "fallback": null
+      }
+    ]
+  },
+  {
+    "id": "78095cfc-cadc-48ad-852f-1080e7d5cd69",
+    "contractName": "1 - NDA_AspoeckSystems_Form2022_final_EN_ungeschuetzt_Portugal_bearbeitet_PT.docx",
+    "model": "claude-haiku-4-5-20251001",
+    "createdAt": "2026-03-29T02:32:09.035Z",
+    "issues": [
+      {
+        "clause": "Other party queries the use of Bolt Operations OU as the signatory",
+        "playbookSection": "Preamble",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA names Aspöck Portugal SA as signatory; does not reference Bolt Operations OÜ or any specific Bolt entity",
+        "counterpartyText": "concluded between Aspöck Portugal SA... and NIF/VAT NR.: hereinafter referred to as 'COMPANY'",
+        "talkingPoint": "Bolt requires contracting with Bolt Operations OÜ as the main operating entity to ensure broad Affiliate coverage and group-wide information sharing",
+        "fallback": "At commercial discretion, may use another Bolt group company, but this narrows protection scope to local subsidiary only"
+      },
+      {
+        "clause": "The other party wants a purpose included in the NDA",
+        "playbookSection": "Purpose",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA explicitly requires designated purpose: 'The purpose of this agreement is to stipulate how INFORMATION is to be handled' and restricts use to 'only for the purposes of this agreement'",
+        "counterpartyText": "use this INFORMATION only for the purposes of this agreement",
+        "talkingPoint": "Bolt discloses all information as Confidential Information without requiring specific purpose designation",
+        "fallback": "May add amendment: 'The Confidential Information disclosed for the purposes of this Agreement relates specifically to [INSERT SPECIFIC PROJECT PURPOSE]' with legal service desk ticket"
+      },
+      {
+        "clause": "Other party requests to identify either or both parties' Affiliates",
+        "playbookSection": "Definition of Affiliates",
+        "severity": "hard_stop",
+        "deviation": "Counterparty defines Affiliates narrowly as 'those for which there is a majority interest, controlling interest or common management' requiring identification rather than standard broad definition",
+        "counterpartyText": "affiliated companies as those for which there is a majority interest, controlling interest or common management",
+        "talkingPoint": "Bolt cannot accept administrative burden of listing hundreds of subsidiaries; standard definition provides necessary flexibility",
+        "fallback": null
+      },
+      {
+        "clause": "Other party requests to add threshold (50%) for Affiliates",
+        "playbookSection": "Definition of Affiliates",
+        "severity": "negotiate",
+        "deviation": "Counterparty definition of Affiliates requires 'majority interest' which functions as a 50%+ threshold, narrowing Bolt's typical control-based definition",
+        "counterpartyText": "majority interest, controlling interest or common management",
+        "talkingPoint": "Bolt's control-based definition protects information across complex corporate structures including non-ownership control arrangements",
+        "fallback": "May amend to: 'control means possession, direct or indirect, of power to direct management and policies, whether through voting securities or otherwise' with legal service desk ticket"
+      },
+      {
+        "clause": "Other party wishes to expand or contract the definition of Confidential Information",
+        "playbookSection": "Definition of Confidential Information",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA limits Confidential Information to that made accessible 'in the context of the COOPERATION' and requires explicit designation or clear context; excludes information designated 'NON-confidential'",
+        "counterpartyText": "all INFORMATION... made accessible to the respective transmitting PARTY in the context of the COOPERATION, unless said information has been explicitly designated as 'NON-confidential'",
+        "talkingPoint": "Bolt's definition covers all non-public information disclosed in business context without requiring explicit marking or narrow purpose limitation",
+        "fallback": "Expansion or contraction should be analyzed case-by-case; exemplary list may be edited for clarity with legal ticket"
+      },
+      {
+        "clause": "Other party wishes to impose a marking requirement for Confidential Information",
+        "playbookSection": "Definition of Confidential Information",
+        "severity": "negotiate",
+        "deviation": "Counterparty requires information be 'explicitly designated' or reasonably identifiable as confidential; effectively requires marking or explicit notice for protection",
+        "counterpartyText": "unless said information has been explicitly designated as 'NON-confidential' by the transmitting PARTY",
+        "talkingPoint": "Bolt does not accept marking requirements due to administrative burden on business teams; internal practices do not support consistent marking",
+        "fallback": "If strong business need: accept marking requirement with limited purpose carve-out, or propose alternative: 'Information identified at time as proprietary, reduced to writing, marked confidential, and transmitted within 30 days' with legal ticket"
+      },
+      {
+        "clause": "Other party wishes to modify, add, or delete the exclusions section",
+        "playbookSection": "Exclusions",
+        "severity": "hard_stop",
+        "deviation": "Counterparty Exceptions clause (c) states 'mostly INFORMATION that was made accessible to the other PARTY by an authorized third party' differs from Bolt standard and lacks language on wrongful disclosure or breach of confidentiality obligations",
+        "counterpartyText": "mostly INFORMATION that was made accessible to the other PARTY by an authorized third party",
+        "talkingPoint": "Exclusions section is standard and non-negotiable; must not be removed or substantially modified",
+        "fallback": null
+      },
+      {
+        "clause": "Other party wants to add a disclosure to governmental entities under the Exclusions",
+        "playbookSection": "Exclusions",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA includes automatic exception for legally required disclosures: 'If the law dictates that INFORMATION must be disseminated, the transmitting PARTY shall always be notified'",
+        "counterpartyText": "If the law dictates that INFORMATION must be disseminated, the transmitting PARTY shall always be notified",
+        "talkingPoint": "Confidentiality obligations survive legal disclosure requirements; information cannot be excluded from trade secret protection based on governmental disclosure",
+        "fallback": null
+      },
+      {
+        "clause": "Other party wishes to add further protection language",
+        "playbookSection": "Use and Disclosure of Confidential Information",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA includes extensive GDPR compliance and data processing security obligations that go beyond standard NDA protection language",
+        "counterpartyText": "adopts all measures of security of treatment, namely: the pseudonymization and encryption of personal data",
+        "talkingPoint": "Bolt already exceeds standard protections; cannot accept additional broad protection obligations beyond Bolt's standard commitments",
+        "fallback": null
+      },
+      {
+        "clause": "Other party wants all Personnel to execute written nondisclosure agreements",
+        "playbookSection": "Receiving Party Personnel Affiliates",
+        "severity": "negotiate",
+        "deviation": "Counterparty restricts disclosure to 'only those employees of a PARTY who have been designated to take part in the COOPERATION and have been asked to keep INFORMATION confidential'",
+        "counterpartyText": "only those employees of a PARTY who have been designated to take part in the COOPERATION",
+        "talkingPoint": "Bolt employees and contractors already sign NDAs; parties accept responsibility for Personnel treatment regardless of individual NDA execution",
+        "fallback": "May add: 'and (iv) in the case of Receiving Party's employees and contractors, who have executed written nondisclosure agreements' with legal service desk ticket"
+      },
+      {
+        "clause": "Other party wants to narrow the definition of Personnel to exclude some or all of directors, officers, agents, legal and financial advisers, or investment banks",
+        "playbookSection": "Receiving Party Personnel Affiliates",
+        "severity": "hard_stop",
+        "deviation": "Counterparty limits Personnel disclosure to only designated employees participating in cooperation; excludes broad classes of advisors, directors, officers",
+        "counterpartyText": "only those employees of a PARTY who have been designated to take part in the COOPERATION",
+        "talkingPoint": "Bolt must share information broadly with advisors, directors, and other Personnel; exclusions create operational constraints for expanding relationships",
+        "fallback": null
+      },
+      {
+        "clause": "Other party requests an unfettered right to make disclosures to certain governmental bodies or any taxation authority of competent jurisdiction if it is lawful",
+        "playbookSection": "Disclosures to Governmental Entities",
+        "severity": "negotiate",
+        "deviation": "Counterparty requires notice 'immediately prior to the impending dissemination' and allows only notification post-disclosure in limited circumstances; does not align with Bolt's preferred process",
+        "counterpartyText": "the transmitting PARTY shall always be notified of this obligation immediately prior to the impending dissemination",
+        "talkingPoint": "Bolt prefers prior notification but acknowledges legal duty to disclose may prevent advance notice; post-disclosure notice acceptable with full circumstances",
+        "fallback": "Insert at end of section: 'If Company is unable to inform Bolt before disclosure, it shall, to extent permitted by law, inform Bolt of circumstances and information disclosed as soon as reasonably practicable' with legal ticket"
+      },
+      {
+        "clause": "Other party wishes to use Bolt's trade name, trademark logo or any other proprietary rights if the subject of discussion results in a commercial arrangement, partnership, project or user offering",
+        "playbookSection": "Ownership of Confidential Information",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA states 'All INFORMATION that has been made accessible shall remain the property of the transmitting PARTY. No rights of use (to registered/granted property rights, know-how) shall be granted' but does not explicitly address trademark/trade name usage",
+        "counterpartyText": "No rights of use (to registered/granted property rights, know-how) shall be granted",
+        "talkingPoint": "Any use of Bolt's trade name, trademark, or IP requires separate formal agreement; NDA purpose is confidentiality only",
+        "fallback": null
+      },
+      {
+        "clause": "Other party states that they may be under a professional or regulatory obligation to retain the Confidential Information",
+        "playbookSection": "Return of Confidential Information",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA exempts from return obligation 'INFORMATION that, by law, must be stored by the receiving PARTY, nor to electronic copies made routinely that are deleted on a regular basis' but does not require proof of regulatory obligation",
+        "counterpartyText": "This obligation shall not apply to INFORMATION that, by law, must be stored by the receiving PARTY",
+        "talkingPoint": "Bolt accepts non-return only if validated regulatory obligation exists; confidentiality undertaking must survive indefinitely",
+        "fallback": "Add to section: 'Company may (i) retain Confidential Information as required by law or regulatory obligation [including for audits] and (ii) copies on IT back-up systems.' Include Section 8 survival for 3 years, Sections 6,8,9,10,11,12 indefinitely with legal ticket"
+      },
+      {
+        "clause": "Other party seeks to retain Confidential Information",
+        "playbookSection": "Return of Confidential Information",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA allows retention of copies 'as long as they are necessary and useful for carrying out the COOPERATION' and permits retention of electronic backup copies deleted routinely",
+        "counterpartyText": "Copies are permitted as long as they are necessary and useful for carrying out the COOPERATION",
+        "talkingPoint": "Bolt maintains strong position against retaining copies post-termination; copies may become subject to subpoena after business relationship ends",
+        "fallback": "If well-evidenced and validated, add exception for regulatory/compliance retention with legal service desk ticket and confidentiality survival clause"
+      },
+      {
+        "clause": "The other party wants a limitation on liability in this NDA to manage their risks",
+        "playbookSection": "Injunctive Relief",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA includes liability waiver: 'The transmitting PARTY shall not be liable for accuracy, absence of errors, completeness or the absence of property rights' and relies on tort law rather than injunctive relief framework",
+        "counterpartyText": "The transmitting PARTY shall not be liable for accuracy, absence of errors, completeness or the absence of property rights",
+        "talkingPoint": "Bolt does not impose liability caps on NDAs; primary remedy is injunctive relief, not financial compensation; no money flow supports limitations",
+        "fallback": "If position is showstopper, escalate through service desk to legal for consideration"
+      },
+      {
+        "clause": "Other party requires penalties in the NDA",
+        "playbookSection": "Penalties",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA references 'valid tort law shall be applicable if there are violations to this agreement' but does not explicitly impose penalty clauses; however, structure allows for tort-based damages",
+        "counterpartyText": "The valid tort law shall be applicable if there are violations to this agreement",
+        "talkingPoint": "Bolt does not apply penalty clauses to low-risk NDAs; no time limits or penalties should be imposed on disclosing party",
+        "fallback": null
+      },
+      {
+        "clause": "The other party wants to change the term of the NDA to less than three (3) years",
+        "playbookSection": "Scope, Term, and Termination",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA specifies 10-year confidentiality obligation post-termination: 'The obligation to confidentiality shall expire 10 years after this agreement / the COOPERATION is complete' (exceeds Bolt standard)",
+        "counterpartyText": "The obligation to confidentiality shall expire 10 years after this agreement / the COOPERATION is complete",
+        "talkingPoint": "Bolt standard is 3-year term with option to accept 1, 2, 3, or 5 years at commercial discretion",
+        "fallback": "May accept term of 1, 2, 3, or 5 years at own commercial discretion; 10 years exceeds standard"
+      },
+      {
+        "clause": "Other party wants Bolt to warrant the accuracy and completeness of the Confidential Information or, if we will not, then require the removal of this section",
+        "playbookSection": "Warranties",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA includes broad warranty exclusion: 'The transmitting PARTY shall not be liable for accuracy, absence of errors, completeness or the absence of property rights to this INFORMATION'",
+        "counterpartyText": "shall not be liable for accuracy, absence of errors, completeness or the absence of property rights to this INFORMATION",
+        "talkingPoint": "Bolt will not warrant accuracy or completeness; information is tied to business discussions and may become outdated; open communication required",
+        "fallback": null
+      },
+      {
+        "clause": "Other party wishes to make the NDA freely assignable",
+        "playbookSection": "Miscellaneous",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA does not address assignment rights; does not explicitly permit or restrict assignment to third parties",
+        "counterpartyText": "No explicit assignment clause present in counterparty NDA",
+        "talkingPoint": "Bolt standard requires consent for non-Affiliate assignment to prevent unknown third parties from enforcing obligations",
+        "fallback": "Allow assignment to purchaser/acquirer as fallback position; make legal service desk ticket for support"
+      },
+      {
+        "clause": "Other party wants the NDA to be pursuant to their local law",
+        "playbookSection": "Miscellaneous",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA specifies: 'Portuguese law shall apply except in cases in which there is a conflict of laws. The place of jurisdiction is the court that has subject-matter jurisdiction at the corporate seat of ASPÖCK Portugal'",
+        "counterpartyText": "Portuguese law shall apply... The place of jurisdiction is the court that has subject-matter jurisdiction at the corporate seat of ASPÖCK Portugal",
+        "talkingPoint": "Bolt standard is Estonia law; will accept alternative jurisdiction only where Bolt has legal entity established",
+        "fallback": "Evaluate case-by-case; make legal service desk ticket for support if necessary"
+      }
+    ]
+  },
+  {
+    "id": "23ff9d74-0fd3-47a4-9cab-e2576519eb9e",
+    "contractName": "1 - NDA_AspoeckSystems_Form2022_final_EN_ungeschuetzt_Portugal_bearbeitet_PT.docx",
+    "model": "claude-haiku-4-5-20251001",
+    "createdAt": "2026-03-29T02:33:32.461Z",
+    "issues": [
+      {
+        "clause": "Purpose",
+        "playbookSection": "Purpose",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA includes a specific PURPOSE section requiring disclosure to be tied to planned cooperation (manufacture of components/equipment or services), rather than Bolt's position of all disclosed information being Confidential Information without purpose designation.",
+        "counterpartyText": "In view of this planned COOPERATION it can be necessary to make confidential information available to each other.",
+        "talkingPoint": "Bolt considers all information disclosed to be Confidential Information and does not require specific purpose designation as long as confidentiality undertaking is maintained.",
+        "fallback": "If unique circumstances require a Purpose, amendment option: 'The Confidential Information disclosed for the purposes of this Agreement relates specifically to [INSERT SPECIFIC PROJECT PURPOSE].' Submit service desk ticket to legal."
+      },
+      {
+        "clause": "Definition of Affiliates - Threshold/Control Definition",
+        "playbookSection": "Definition of Affiliates",
+        "severity": "negotiate",
+        "deviation": "Counterparty defines affiliated companies as 'those for which there is a majority interest, controlling interest or common management,' which appears to impose a control/majority threshold unlike Bolt's standard definition.",
+        "counterpartyText": "affiliated companies as those for which there is a majority interest, controlling interest or common management",
+        "talkingPoint": "Bolt's Affiliate definition is industry standard and based on control. Defining based on ownership percentages creates uncertainty about protection scope and Bolt cannot accept administrative burden of knowing counterparty's corporate structure.",
+        "fallback": "You may elect to amend to state: 'The term \"control\" means the possession, direct or indirect, of the power to direct or cause the direction of the management and policies of an entity, whether through the ownership of voting securities or otherwise.' Submit service desk ticket to legal."
+      },
+      {
+        "clause": "Definition of Confidential Information - Marking Requirement",
+        "playbookSection": "Definition of Confidential Information",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA states information protected 'regardless of its type and form' but Section on Dissemination and Exceptions implies information must be explicitly designated or marked as confidential to qualify for protection.",
+        "counterpartyText": "unless said information has been explicitly designated as \"NON-confidential\" by the transmitting PARTY",
+        "talkingPoint": "Bolt does not accept marking requirements due to administrative burden on business owners. Our internal policies do not establish consistent marking practice for employees.",
+        "fallback": "If deal-breaker, suggest alternative: 'Information disclosed orally or visually identified as proprietary shall be covered if reduced to writing, marked confidential, and transmitted within 30 days.' Submit service desk ticket to legal with commercial approval."
+      },
+      {
+        "clause": "Exclusions - Wrongful Disclosure",
+        "playbookSection": "Exclusions",
+        "severity": "hard_stop",
+        "deviation": "Counterparty exclusion (c) states 'mostly INFORMATION that was made accessible to the other PARTY by an authorized third party' without the wrongful/tortious act language required by Bolt standard, creating ambiguity about what 'authorized' means.",
+        "counterpartyText": "mostly INFORMATION that was made accessible to the other PARTY by an authorized third party",
+        "talkingPoint": "Bolt's exclusions section should not be modified. Exclusions must include wrongful or tortious act language to properly protect Bolt's interests.",
+        "fallback": null
+      },
+      {
+        "clause": "Use and Disclosure - Personnel Access Limitation",
+        "playbookSection": "Receiving Party Personnel Affiliates",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA restricts information access to 'only those employees of a PARTY who have been designated to take part in the COOPERATION and have been asked to keep INFORMATION confidential,' which narrows Personnel beyond Bolt standard and may exclude necessary advisors.",
+        "counterpartyText": "only those employees of a PARTY who have been designated to take part in the COOPERATION",
+        "talkingPoint": "Bolt requires broad Personnel definition including directors, officers, agents, legal and financial advisers. Narrow restrictions prevent Bolt from sharing information with necessary advisors and limit business flexibility.",
+        "fallback": null
+      },
+      {
+        "clause": "Disclosure to Governmental Entities - Notice Requirement",
+        "playbookSection": "Disclosures to Governmental Entities",
+        "severity": "negotiate",
+        "deviation": "Counterparty requires Bolt to notify transmitting party 'immediately prior' to any legally mandated disclosure without carve-out for situations where prior notice is prohibited by law.",
+        "counterpartyText": "the transmitting PARTY shall always be notified of this obligation immediately prior to the impending dissemination",
+        "talkingPoint": "Bolt standard permits government disclosure but counterparty's 'always notify prior' creates friction when legal duty to disclose prohibits prior notice to Bolt.",
+        "fallback": "Insert at section end: 'If Company is unable to inform Bolt before disclosure pursuant to this clause, it shall, to the extent permitted by law, inform Bolt of full circumstances and information disclosed as soon as reasonably practicable after disclosure.' Submit service desk ticket to legal."
+      },
+      {
+        "clause": "Ownership of Confidential Information - Use of Trademarks",
+        "playbookSection": "Ownership of Confidential Information",
+        "severity": "hard_stop",
+        "deviation": "Counterparty section states 'No rights of use (to registered/granted property rights, know-how) shall be granted' but NDA is silent on whether Bolt can use Aspöck's name/trademarks in marketing or public announcements post-execution.",
+        "counterpartyText": "No rights of use (to registered/granted property rights, know-how) shall be granted",
+        "talkingPoint": "Any use of counterparty's trade name, trademark or proprietary rights following NDA signature requires separate formal agreement with express superseding terms.",
+        "fallback": null
+      },
+      {
+        "clause": "Return of Confidential Information - Indefinite Retention",
+        "playbookSection": "Return of Confidential Information",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA requires return of all information 'immediately upon prompting' with only limited exception for legally-required retention, but does not address Bolt's backup systems or provide flexibility for regulatory/professional retention obligations.",
+        "counterpartyText": "All INFORMATION and copies shall be issued to the transmitting PARTY immediately upon prompting, but no later than the end of the COOPERATION",
+        "talkingPoint": "Bolt maintains strong position against retaining counterparty information post-relationship. However, Bolt requires flexibility for legally-mandated retention and IT backup systems.",
+        "fallback": "If counterparty has valid regulatory obligation, may retain with continued confidentiality. Add language: 'Company may (i) retain Confidential Information as required by law or regulatory obligation and (ii) retain copies on IT backup systems deleted on regular basis.' Submit service desk ticket to legal."
+      },
+      {
+        "clause": "Penalties - Liability for Breach",
+        "playbookSection": "Penalties",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA states 'valid tort law shall be applicable if there are violations' which could impose undefined damages/penalties for breach without Bolt having recourse to injunctive relief as primary remedy.",
+        "counterpartyText": "The valid tort law shall be applicable if there are violations to this agreement",
+        "talkingPoint": "Bolt does not accept penalty clauses in NDAs. Injunctive relief is primary remedy for confidentiality breaches, not financial penalties or tort damages.",
+        "fallback": null
+      },
+      {
+        "clause": "Scope, Term, and Termination - Confidentiality Duration",
+        "playbookSection": "Scope, Term, and Termination",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA provides only 10-year post-termination confidentiality obligation ('10 years after this agreement / the COOPERATION is complete'), shorter than Bolt's standard three-year minimum and potentially insufficient for trade secret protection.",
+        "counterpartyText": "The obligation to confidentiality shall expire 10 years after this agreement / the COOPERATION is complete",
+        "talkingPoint": "Bolt requires longer term to ensure adequate protection of Confidential Information and trade secrets. 10 years is acceptable but Bolt standard is 3-year minimum with indefinite trade secret protection option.",
+        "fallback": "You may accept 1, 2, 3, or 5-year terms at own commercial discretion. Consider negotiating for indefinite trade secret protection with identified trade secrets."
+      },
+      {
+        "clause": "Warranties - Accuracy and Completeness",
+        "playbookSection": "Warranties",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA states 'The transmitting PARTY shall not be liable for accuracy, absence of errors, completeness or the absence of property rights' which is consistent with Bolt standard, but lack of reciprocal warranty from Aspöck may create unbalanced risk.",
+        "counterpartyText": "The transmitting PARTY shall not be liable for accuracy, absence of errors, completeness or the absence of property rights",
+        "talkingPoint": "Bolt will not warrant accuracy or completeness of Confidential Information. Standard NDA relates to all business discussions therefore cannot warrant every disclosure. Business is fast-moving and information becomes outdated quickly.",
+        "fallback": null
+      },
+      {
+        "clause": "Miscellaneous - Governing Law and Jurisdiction",
+        "playbookSection": "Miscellaneous",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA specifies Portuguese law and Aspöck Portugal's courts as exclusive jurisdiction ('The place of jurisdiction is the court that has subject-matter jurisdiction at the corporate seat of ASPÖCK Portugal'), deviating from Bolt's standard requirement of Estonian law and jurisdiction.",
+        "counterpartyText": "Portuguese law shall apply except in cases in which there is a conflict of laws. The place of jurisdiction is the court that has subject-matter jurisdiction at the corporate seat of ASPÖCK Portugal",
+        "talkingPoint": "Bolt standard is Estonia law and jurisdiction. Bolt will accept alternative jurisdiction only where Bolt has legal entity established.",
+        "fallback": "Bolt will accept alternative jurisdiction where Bolt has legal entity established if absolutely necessary. Always maintain Estonia as first choice preference. Submit service desk ticket to legal for support."
+      }
+    ]
+  },
+  {
+    "id": "7e84db19-ae77-43ad-81d2-15b880a6f66e",
+    "contractName": "1 - NDA_AspoeckSystems_Form2022_final_EN_ungeschuetzt_Portugal_bearbeitet_PT.docx",
+    "model": "claude-haiku-4-5-20251001",
+    "createdAt": "2026-03-29T02:49:56.559Z",
+    "issues": [
+      {
+        "clause": "Signatory Entity",
+        "playbookSection": "Preamble",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA does not specify Bolt Operations OÜ as the required signatory; instead references generic 'COMPANY' with blank NIF/VAT field.",
+        "counterpartyText": "NIF/VAT NR.: [blank] hereinafter referred to as 'COMPANY'",
+        "talkingPoint": "Bolt requires Bolt Operations OÜ as signatory to ensure all group subsidiaries and parent company (via Affiliates definition) can share confidential information.",
+        "fallback": "At commercial discretion, may use another Bolt group company, though this narrows scope to local subsidiary level only."
+      },
+      {
+        "clause": "Purpose Specification",
+        "playbookSection": "Purpose",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA requires explicit purpose language: 'to manufacture components/equipaments or/and Services' and restricts use 'only for the purposes of this agreement.'",
+        "counterpartyText": "use this INFORMATION only for the purposes of this agreement",
+        "talkingPoint": "Bolt discloses information under ongoing business relationship; specific purpose designation creates administrative burden and limits future business expansion.",
+        "fallback": "If required, add: 'The Confidential Information disclosed for the purposes of this Agreement relates specifically to [INSERT SPECIFIC PROJECT PURPOSE].' and file legal service desk ticket."
+      },
+      {
+        "clause": "Definition of Affiliates - Threshold",
+        "playbookSection": "Definition of Affiliates",
+        "severity": "negotiate",
+        "deviation": "Counterparty defines affiliated companies as 'those for which there is a majority interest, controlling interest or common management,' which may exclude entities without majority ownership.",
+        "counterpartyText": "affiliated companies as those for which there is a majority interest, controlling interest or common management",
+        "talkingPoint": "Bolt's flat and complex corporate structure requires free information sharing across entities; majority ownership threshold may exclude entities Bolt needs to involve.",
+        "fallback": "May amend to state: 'The term \"control\" means the possession, direct or indirect, of the power to direct or cause the direction of the management and policies of an entity, whether through the ownership of voting securities or otherwise.' File legal service desk ticket if approved."
+      },
+      {
+        "clause": "Personnel Definition Restriction",
+        "playbookSection": "Receiving Party Personnel Affiliates",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA limits disclosures to 'only those employees of a PARTY who have been designated to take part in the COOPERATION' rather than allowing broader Personnel (directors, officers, advisers, agents).",
+        "counterpartyText": "only those employees of a PARTY who have been designated to take part in the COOPERATION",
+        "talkingPoint": "Bolt requires flexibility to share with directors, officers, legal/financial advisers, and agents as business needs evolve; restrictive designation limits operational agility.",
+        "fallback": null
+      },
+      {
+        "clause": "Dissemination Requirement",
+        "playbookSection": "Use and Disclosure of Confidential Information",
+        "severity": "hard_stop",
+        "deviation": "Counterparty requires 'explicit written permission' before any dissemination of information; Bolt's standard allows dissemination to third parties under confidentiality obligations without prior written consent.",
+        "counterpartyText": "Dissemination of this INFORMATION is permitted only after explicit written permission is granted",
+        "talkingPoint": "Requiring written permission for each disclosure creates operational bottleneck; Bolt's standard sufficiently protects via confidentiality obligation on recipient.",
+        "fallback": null
+      },
+      {
+        "clause": "Exclusions - Third Party Disclosure",
+        "playbookSection": "Exclusions",
+        "severity": "hard_stop",
+        "deviation": "Counterparty exclusion (c) states information from 'authorized third party' is excluded; lacks language addressing whether receiving party knew disclosure breached confidentiality obligation.",
+        "counterpartyText": "mostly INFORMATION that was made accessible to the other PARTY by an authorized third party",
+        "talkingPoint": "Exclusion should not apply if receiving party knows or reasonably should know disclosure was wrongful or breached confidentiality obligation.",
+        "fallback": "Propose: '(iii) is disclosed to the Receiving Party from a third party, except where the Receiving Party knows or reasonably should know, that (a) such disclosure constitutes a wrongful or tortious act or (b) such information was acquired or disclosed in breach of an obligation of confidentiality.' File legal service desk ticket if approved."
+      },
+      {
+        "clause": "Return of Confidential Information",
+        "playbookSection": "Return of Confidential Information",
+        "severity": "negotiate",
+        "deviation": "Counterparty requires immediate return of all INFORMATION 'but no later than the end of the COOPERATION' with exception only for legally mandated retention; does not address backup systems or regulatory retention scenarios.",
+        "counterpartyText": "issued to the transmitting PARTY immediately upon prompting...but no later than the end of the COOPERATION",
+        "talkingPoint": "Bolt standard accepts retention where required by law/regulation, and does not require scrub of backup systems; counterparty's blanket return requirement is overly restrictive.",
+        "fallback": "If counterparty has legitimate regulatory retention need, propose: 'Company may (i) retain the Confidential Information as required by law or a regulatory obligation [including for audits] and (ii) retain copies held on IT back-up systems.' File legal service desk ticket if approved."
+      },
+      {
+        "clause": "Reverse Engineering Restriction",
+        "playbookSection": "Use and Disclosure of Confidential Information",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA includes prohibition on 'reverse engineering' of confidential information, which goes beyond Bolt's standard use restrictions.",
+        "counterpartyText": "The prohibition on exploitation also includes issues of 'reverse engineering'",
+        "talkingPoint": "Reverse engineering restrictions may conflict with Bolt's operational needs and are not part of standard NDA protection; this is overly protective language.",
+        "fallback": null
+      },
+      {
+        "clause": "GDPR Data Processing Terms",
+        "playbookSection": "Miscellaneous",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA includes extensive GDPR data processor obligations (Section on 'Compliance with the general regulation of protection data') that transform the NDA into a Data Processing Agreement, imposing subcontractor status and detailed security obligations.",
+        "counterpartyText": "the supplier declares, as a subcontractor of Aspöck Portugal, that: (a) the processing of personal data shall be in accordance with documented instructions",
+        "talkingPoint": "NDA should remain a confidentiality agreement; GDPR data processing obligations belong in a separate Data Processing Agreement (DPA), not an NDA. This conflates two distinct legal relationships.",
+        "fallback": null
+      },
+      {
+        "clause": "Governing Law and Jurisdiction",
+        "playbookSection": "Miscellaneous",
+        "severity": "negotiate",
+        "deviation": "Counterparty specifies Portuguese law and jurisdiction at ASPÖCK Portugal's corporate seat; Bolt's standard is Estonia.",
+        "counterpartyText": "Portuguese law shall apply except in cases in which there is a conflict of laws. The place of jurisdiction is the court...at the corporate seat of ASPÖCK Portugal",
+        "talkingPoint": "Bolt standard is Estonia. Portuguese jurisdiction is inconvenient and increases legal costs for Bolt.",
+        "fallback": "Bolt will accept an alternative jurisdiction where Bolt has a legal entity established if absolutely necessary; otherwise maintain Estonia as first choice. Escalate via legal service desk."
+      },
+      {
+        "clause": "Term and Confidentiality Duration",
+        "playbookSection": "Scope, Term, and Termination",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA specifies confidentiality obligation expires '10 years after this agreement / the COOPERATION is complete,' which is longer than Bolt's standard 3-year term.",
+        "counterpartyText": "The obligation to confidentiality shall expire 10 years after this agreement / the COOPERATION is complete",
+        "talkingPoint": "Bolt standard allows 1, 2, 3, or 5-year terms at commercial discretion; 10 years is unusually long for non-trade secret information.",
+        "fallback": "You may accept a term of 1, 2, 3, or 5 years at your commercial discretion."
+      },
+      {
+        "clause": "Warranties Exclusion",
+        "playbookSection": "Warranties",
+        "severity": "acceptable",
+        "deviation": "Counterparty NDA includes broad warranty exclusion: 'shall not be liable for accuracy, absence of errors, completeness or the absence of property rights...and the usability of INFORMATION,' which aligns with Bolt's position.",
+        "counterpartyText": "shall not be liable for accuracy, absence of errors, completeness or the absence of property rights to this INFORMATION",
+        "talkingPoint": "Counterparty warranty exclusion is favorable to Bolt and matches standard NDA protection.",
+        "fallback": null
+      },
+      {
+        "clause": "Liability and Tort Law",
+        "playbookSection": "Injunctive Relief",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA states 'The valid tort law shall be applicable if there are violations to this agreement,' which does not explicitly preserve Bolt's right to seek injunctive relief for breach.",
+        "counterpartyText": "The valid tort law shall be applicable if there are violations to this agreement",
+        "talkingPoint": "Bolt requires explicit right to seek immediate injunction to prevent unauthorized disclosure or use; relying only on tort law remedies is insufficient.",
+        "fallback": "If liability cap is deal-breaker, escalate to legal via service desk for consideration of injunctive relief language."
+      }
+    ]
+  },
+  {
+    "id": "00982c18-fa8d-496e-817c-3c5e82e0f717",
+    "contractName": "1 - NDA_AspoeckSystems_Form2022_final_EN_ungeschuetzt_Portugal_bearbeitet_PT.docx",
+    "model": "claude-haiku-4-5-20251001",
+    "createdAt": "2026-03-29T02:56:52.109Z",
+    "issues": [
+      {
+        "clause": "Other party queries the use of Bolt Operations OU as the signatory",
+        "playbookSection": "Preamble",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA names 'Aspöck Portugal SA' as signatory, not Bolt Operations OÜ",
+        "counterpartyText": "Aspöck Portugal SA...hereinafter referred to as 'ASPÖCK' and NIF/VAT NR.: hereinafter referred to as 'COMPANY'",
+        "talkingPoint": "Bolt requires Bolt Operations OÜ as signatory to ensure main operating entity enters NDA and Affiliates definition covers all group companies",
+        "fallback": "If deal-breaker, may use another Bolt group company, but results in narrower scope of protection"
+      },
+      {
+        "clause": "The other party wants a purpose included in the NDA",
+        "playbookSection": "Purpose",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA explicitly requires purpose: 'Aspöck intends to engage to manufacture components/equipaments or/and Services' and states purpose is to stipulate how INFORMATION is handled",
+        "counterpartyText": "The purpose of this agreement is to stipulate how INFORMATION is to be handled and also to protect it",
+        "talkingPoint": "Bolt considers all disclosed information as Confidential Information without requiring specific purpose designation",
+        "fallback": "If required, may add: 'The Confidential Information disclosed for the purposes of this Agreement relates specifically to [INSERT SPECIFIC PROJECT PURPOSE]'"
+      },
+      {
+        "clause": "Other party requests to identify either or both parties' Affiliates",
+        "playbookSection": "Definition of Affiliates",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA defines affiliated companies as 'those for which there is a majority interest, controlling interest or common management' requiring specific identification",
+        "counterpartyText": "affiliated companies as those for which there is a majority interest, controlling interest or common management",
+        "talkingPoint": "Bolt cannot accept administrative burden of listing all Affiliates with hundreds of subsidiaries",
+        "fallback": null
+      },
+      {
+        "clause": "Other party requests to add threshold (50%) for Affiliates",
+        "playbookSection": "Definition of Affiliates",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA limits Affiliates to entities with 'majority interest' (>50%), narrowing Bolt's ability to share with controlled entities without majority ownership",
+        "counterpartyText": "affiliated companies as those for which there is a majority interest, controlling interest or common management",
+        "talkingPoint": "Bolt needs broad Affiliate definition based on control concept, not just ownership thresholds",
+        "fallback": "May amend to define 'control' as: 'possession, direct or indirect, of power to direct management and policies, whether through voting securities or otherwise'"
+      },
+      {
+        "clause": "Other party wishes to modify, add, or delete the exclusions section",
+        "playbookSection": "Exclusions",
+        "severity": "hard_stop",
+        "deviation": "Counterparty exclusions in (c) state 'mostly INFORMATION that was made accessible' and lack Bolt's standard comprehensive exclusion language structure",
+        "counterpartyText": "c) mostly INFORMATION that was made accessible to the other PARTY by an authorized third party",
+        "talkingPoint": "Exclusions section should not be removed or materially modified from standard form",
+        "fallback": null
+      },
+      {
+        "clause": "Other party wants to add a disclosure to governmental entities under the Exclusions",
+        "playbookSection": "Exclusions",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA includes GDPR/data protection provisions allowing dissemination if law dictates without maintaining confidentiality obligations thereafter",
+        "counterpartyText": "If the law dictates that INFORMATION must be disseminated, the transmitting PARTY shall always be notified of this obligation",
+        "talkingPoint": "Confidentiality obligations must survive governmental disclosure; information cannot lose trade secret protection simply because disclosed under legal obligation",
+        "fallback": null
+      },
+      {
+        "clause": "Other party wishes to add further protection language",
+        "playbookSection": "Use and Disclosure of Confidential Information",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA includes extensive GDPR/data protection subprocessor obligations requiring Bolt to adopt specific security measures and assist with compliance",
+        "counterpartyText": "adopts all measures of security of treatment, namely: the pseudonymization and encryption of personal data; ability to ensure continued confidentiality, integrity, availability",
+        "talkingPoint": "Bolt already implements strong protections; cannot accept additional compliance burdens in NDA beyond standard confidentiality undertaking",
+        "fallback": null
+      },
+      {
+        "clause": "Other party wants to narrow the definition of Personnel to exclude some or all of directors, officers, agents, legal and financial advisers",
+        "playbookSection": "Receiving Party Personnel Affiliates",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA limits information access to 'only those employees of a PARTY who have been designated to take part in the COOPERATION', excluding broader Personnel categories",
+        "counterpartyText": "only those employees of a PARTY who have been designated to take part in the COOPERATION and have been asked to keep INFORMATION confidential",
+        "talkingPoint": "Bolt needs to share with directors, officers, advisers, and other Personnel; narrow definitions restrict business flexibility",
+        "fallback": null
+      },
+      {
+        "clause": "Other party states that they may be under a professional or regulatory obligation to retain the Confidential Information",
+        "playbookSection": "Return of Confidential Information",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA allows retention of INFORMATION required by law and routine electronic backup copies, but does not limit to regulatory obligations or provide survival clause",
+        "counterpartyText": "This obligation shall not apply to INFORMATION that, by law, must be stored by the receiving PARTY, nor to electronic copies made routinely that are deleted on a regular basis",
+        "talkingPoint": "Bolt will accept non-return only for valid regulatory/legal obligations; confidentiality undertaking must survive",
+        "fallback": "May add: Company may retain Confidential Information (i) as required by law or regulatory obligation and (ii) on IT backup systems. Include survival clause for 3 years post-termination."
+      },
+      {
+        "clause": "Other party wants Bolt to warrant the accuracy and completeness of the Confidential Information",
+        "playbookSection": "Warranties",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA states transmitting party has no liability for 'accuracy, absence of errors, completeness or the absence of property rights' but does not explicitly include this in Bolt's standard warranty exclusion format",
+        "counterpartyText": "The transmitting PARTY shall not be liable for accuracy, absence of errors, completeness or the absence of property rights to this INFORMATION",
+        "talkingPoint": "Bolt will not warrant accuracy or completeness of Confidential Information due to fast-moving business and non-transactional nature of NDA",
+        "fallback": null
+      },
+      {
+        "clause": "Other party requests to supersede or invalidate a previous NDA",
+        "playbookSection": "Miscellaneous",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA contains no superseding language but states 'Any changes and amendments must be in writing' suggesting replacement of prior agreements without express supersession language",
+        "counterpartyText": "Any changes and amendments must be in writing. Should any provision of this agreement be (partially) ineffective / unenforceable",
+        "talkingPoint": "Necessity to supersede prior NDAs should be evaluated case-by-case with legal review",
+        "fallback": "Evaluate necessity case-by-case; escalate to legal service desk"
+      },
+      {
+        "clause": "Other party wants the NDA to be pursuant to their local law",
+        "playbookSection": "Miscellaneous",
+        "severity": "negotiate",
+        "deviation": "Counterparty NDA specifies 'Portuguese law shall apply except in cases in which there is a conflict of laws' and jurisdiction is 'court that has subject-matter jurisdiction at the corporate seat of ASPÖCK Portugal'",
+        "counterpartyText": "Portuguese law shall apply except in cases in which there is a conflict of laws. The place of jurisdiction is the court that has subject-matter jurisdiction at the corporate seat of ASPÖCK Portugal",
+        "talkingPoint": "Bolt standard is Estonia law; will accept alternative jurisdiction only where Bolt has legal entity established",
+        "fallback": "Bolt may accept Portuguese law if necessary, but should attempt to maintain Estonia as first choice"
+      },
+      {
+        "clause": "The following are frequently requested additions that can be agreed at your commercial discretion for inclusion",
+        "playbookSection": "Miscellaneous",
+        "severity": "hard_stop",
+        "deviation": "Counterparty NDA includes extensive GDPR/RGPD data protection subprocessor compliance requirements (Articles 28 et seq) that exceed standard NDA scope",
+        "counterpartyText": "Compliance with the general regulation of protection data and consequences...processing of personal data shall be in accordance with documented instructions of the controller",
+        "talkingPoint": "Data protection obligations should not be embedded in NDA; require separate Data Processing Agreement if personal data handling is contemplated",
+        "fallback": null
+      }
+    ]
+  }
+]

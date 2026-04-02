@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doc Review</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="header-left">
+    <a href="/" class="header-home-link">
+      <svg class="header-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+      </svg>
+      <span class="app-title">Doc Review</span>
+    </a>
+    <a href="/playbook" class="header-nav-link">Playbook</a>
+    <a href="/reviews" class="header-nav-link">Reviews</a>
+    <span class="filename hidden" id="filename"></span>
+  </div>
+  <div class="header-right" id="header-stats" style="display:none;">
+    <span class="stat-badge stat-ins" id="stat-ins"></span>
+    <span class="stat-badge stat-del" id="stat-del"></span>
+    <span class="stat-badge stat-com" id="stat-com"></span>
+    <div class="view-toggle" id="view-toggle">
+      <button class="vt-btn active" id="vt-doc" title="Document view">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Doc
+      </button>
+      <button class="vt-btn" id="vt-json" title="JSON view">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        JSON
+      </button>
+    </div>
+    <button class="btn btn-primary" id="download-docx-btn" style="display:none;">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download .docx
+    </button>
+    <button class="btn btn-ghost" id="upload-new-btn">Upload new</button>
+    <div class="eval-header-group" id="eval-header-group" style="display:none;">
+      <span class="eval-badge" id="eval-badge"></span>
+      <button class="btn btn-ghost eval-toggle-btn" id="eval-toggle-btn">Evaluator</button>
+    </div>
+  </div>
+</header>
+
+<!-- Upload screen -->
+<div id="upload-screen" class="upload-screen">
+  <div class="upload-zone" id="drop-zone">
+    <div class="upload-icon">
+      <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+        <polyline points="14 2 14 8 20 8"/>
+        <line x1="16" y1="13" x2="8" y2="13"/>
+        <line x1="16" y1="17" x2="8" y2="17"/>
+      </svg>
+    </div>
+    <p>Drop your .docx file here</p>
+    <p class="upload-hint">or click to browse</p>
+    <input type="file" id="file-input" accept=".docx">
+  </div>
+</div>
+
+<!-- Main content -->
+<div id="main-content" class="main-content hidden">
+
+  <!-- Chat sidebar (left) -->
+  <aside class="chat-sidebar">
+    <div class="chat-header">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <span class="chat-title">Ask AI</span>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+      <div class="chat-welcome">
+        <p>Ask anything about this document — clauses, obligations, risks, suggested changes.</p>
+      </div>
+    </div>
+    <div class="chat-toolbar">
+      <button id="btn-review-nda" class="chat-toolbar-btn">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        Review NDA
+      </button>
+      <button id="btn-step-review" class="chat-toolbar-btn">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        Step Review
+      </button>
+      <div class="pb-source-toggle" id="pb-source-toggle" title="Playbook source">
+        <button class="pb-source-btn active" data-source="app">App</button>
+        <button class="pb-source-btn" data-source="md">.md</button>
+      </div>
+    </div>
+    <div class="chat-input-area">
+      <textarea id="chat-input" placeholder="Ask about this document…" rows="1"></textarea>
+      <button id="chat-send" class="chat-send-btn" title="Send">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </div>
+  </aside>
+
+  <div class="document-area">
+    <div class="document-paper" id="document-paper" contenteditable="true" spellcheck="false"></div>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-tabs">
+        <button class="sidebar-tab active" id="tab-review">Review <span class="badge" id="review-badge">0</span></button>
+        <button class="sidebar-tab" id="tab-playbook">Playbook <span class="badge badge-hidden" id="playbook-badge">0</span></button>
+        <button class="sidebar-tab" id="tab-step-review">Step Review <span class="badge badge-hidden" id="step-review-badge">0</span></button>
+      </div>
+    </div>
+    <div class="sidebar-panel" id="sidebar-panel"></div>
+    <div class="sidebar-panel hidden" id="playbook-panel"></div>
+    <div class="sidebar-panel hidden" id="step-review-panel"></div>
+  </aside>
+</div>
+
+<!-- JSON view -->
+<div id="json-view" class="json-view hidden">
+  <div class="json-toolbar">
+    <span class="json-toolbar-label">redlines.json</span>
+    <button class="btn btn-ghost" id="json-copy-btn" style="font-size:12px;padding:4px 12px;">Copy</button>
+  </div>
+  <pre id="json-pre"></pre>
+</div>
+
+<!-- Loading overlay -->
+<div id="loading" class="loading-overlay hidden">
+  <div class="loading-card">
+    <div class="spinner"></div>
+    <p>Parsing document…</p>
+  </div>
+</div>
+
+<!-- Floating annotation toolbar -->
+<div id="ann-toolbar" class="ann-toolbar hidden">
+  <button id="tb-missed" class="ann-btn ann-btn-missed eval-only" title="Add missed issue">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+    Missed issue
+  </button>
+  <button id="tb-suggest" class="ann-btn ann-btn-ins non-eval" title="Mark as suggestion">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+    Suggest
+  </button>
+  <button id="tb-delete" class="ann-btn ann-btn-del non-eval" title="Mark as deletion">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    Delete
+  </button>
+  <button id="tb-comment" class="ann-btn ann-btn-com non-eval" title="Add comment">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    Comment
+  </button>
+</div>
+
+<!-- Comment input popover -->
+<div id="ann-popover" class="ann-popover hidden">
+  <textarea id="ann-comment-text" placeholder="Add a comment… (Ctrl+Enter to submit)" rows="3"></textarea>
+  <div class="ann-popover-actions">
+    <button id="ann-cancel" class="btn btn-ghost" style="font-size:12px;padding:4px 10px;">Cancel</button>
+    <button id="ann-submit" class="btn btn-primary" style="font-size:12px;padding:4px 10px;">Add comment</button>
+  </div>
+</div>
+
+<!-- Missed issue popover (eval mode) -->
+<div id="missed-popover" class="missed-popover hidden">
+  <div class="missed-popover-header">
+    <span>Add missed issue</span>
+    <button id="missed-cancel-x" class="missed-cancel-x">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="missed-popover-body">
+    <div class="missed-field">
+      <label class="missed-label">Playbook clause</label>
+      <div class="missed-clause-row">
+        <select id="missed-clause-select">
+          <option value="">Select clause…</option>
+        </select>
+        <button id="missed-browse-btn" class="btn btn-ghost" style="font-size:11px;padding:4px 8px;white-space:nowrap;">Browse</button>
+      </div>
+    </div>
+    <div class="missed-field">
+      <label class="missed-label">Severity</label>
+      <div class="missed-severity-row">
+        <label class="missed-radio"><input type="radio" name="missed-sev" value="hard_stop"> Hard stop</label>
+        <label class="missed-radio"><input type="radio" name="missed-sev" value="negotiate" checked> Negotiate</label>
+        <label class="missed-radio"><input type="radio" name="missed-sev" value="acceptable"> Acceptable</label>
+      </div>
+    </div>
+    <div class="missed-field">
+      <label class="missed-label">Comment</label>
+      <textarea id="missed-comment" rows="3" placeholder="Why should AI have caught this?"></textarea>
+    </div>
+    <div class="missed-field">
+      <label class="missed-checkbox-label">
+        <input type="checkbox" id="missed-not-in-playbook"> Not covered in playbook
+      </label>
+      <textarea id="missed-gap-note" class="hidden" rows="2" placeholder="Note for playbook gap…" style="margin-top:6px;"></textarea>
+    </div>
+  </div>
+  <div class="missed-popover-actions">
+    <button id="missed-cancel-btn" class="btn btn-ghost" style="font-size:12px;padding:4px 10px;">Cancel</button>
+    <button id="missed-submit-btn" class="btn btn-primary" style="font-size:12px;padding:4px 10px;">Add issue</button>
+  </div>
+</div>
+
+<!-- Playbook drawer (eval mode) -->
+<div id="pb-drawer-overlay" class="pb-drawer-overlay hidden"></div>
+<div id="pb-drawer" class="pb-drawer hidden">
+  <div class="pb-drawer-header">
+    <span class="pb-drawer-title">NDA Playbook</span>
+    <button id="pb-drawer-close" class="pb-modal-close">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="pb-drawer-search">
+    <input id="pb-drawer-search" type="text" placeholder="Search clauses…">
+  </div>
+  <div class="pb-drawer-body" id="pb-drawer-body"></div>
+</div>
+
+<!-- Playbook section modal -->
+<div id="playbook-modal" class="pb-modal-overlay hidden">
+  <div class="pb-modal-card">
+    <div class="pb-modal-header">
+      <span class="pb-modal-title" id="pb-modal-title">Playbook</span>
+      <button class="pb-modal-close" id="pb-modal-close" title="Close">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="pb-modal-body" id="pb-modal-body"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

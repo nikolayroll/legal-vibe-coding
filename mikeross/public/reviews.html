@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review History</title>
+  <link rel="stylesheet" href="reviews-page.css">
+</head>
+<body>
+
+<header class="rv-header">
+  <div class="rv-header-left">
+    <a href="/" class="rv-back-link">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+      Doc Review
+    </a>
+    <div class="rv-header-sep"></div>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    <h1 class="rv-header-title">Review History</h1>
+  </div>
+</header>
+
+<div class="rv-layout">
+
+  <!-- Left: document + run list -->
+  <div class="rv-sidebar">
+    <div class="rv-sidebar-header">Documents</div>
+    <div id="doc-list">
+      <div class="rv-loading">Loading…</div>
+    </div>
+  </div>
+
+  <!-- Right: run detail -->
+  <div class="rv-detail" id="run-detail">
+    <div class="rv-detail-empty">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#d1d5db" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <p>Select a review run from the left to see its issues and evaluations.</p>
+    </div>
+  </div>
+
+</div>
+
+<script src="reviews-page.js"></script>
+</body>
+</html>

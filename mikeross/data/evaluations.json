@@ -1,0 +1,116 @@
+[
+  {
+    "id": "55b6fba4-6885-4f0c-93bc-92a08dfc3112",
+    "runId": "86c1a53a-18d0-4194-8bdd-255a9999ebf9",
+    "evaluator": "Nikolay Roll",
+    "submittedAt": "2026-03-29T00:20:15.291Z",
+    "grades": {
+      "0": {
+        "verdict": "",
+        "comment": ""
+      },
+      "1": {
+        "verdict": "",
+        "comment": ""
+      },
+      "2": {
+        "verdict": "",
+        "comment": ""
+      },
+      "3": {
+        "verdict": "",
+        "comment": ""
+      },
+      "4": {
+        "verdict": "",
+        "comment": ""
+      },
+      "5": {
+        "verdict": "",
+        "comment": ""
+      },
+      "6": {
+        "verdict": "partial",
+        "comment": "should be green? because 10 years is within our \"OK\" range?"
+      },
+      "7": {
+        "verdict": "",
+        "comment": ""
+      },
+      "8": {
+        "verdict": "",
+        "comment": ""
+      },
+      "9": {
+        "verdict": "",
+        "comment": ""
+      },
+      "10": {
+        "verdict": "partial",
+        "comment": "Seems like important -> needs to warn to create a ticket and this actually needs to be in red. Blocker stoper"
+      },
+      "11": {
+        "verdict": "",
+        "comment": ""
+      }
+    },
+    "missedIssues": []
+  },
+  {
+    "id": "11cd8c8b-f836-4f9d-91c5-e84bdf9aa574",
+    "runId": "86c1a53a-18d0-4194-8bdd-255a9999ebf9",
+    "evaluator": "Nikolay Roll",
+    "submittedAt": "2026-03-29T00:31:33.272Z",
+    "grades": {
+      "0": {
+        "verdict": "partial",
+        "comment": "Not sure how to deal with this one? AI correctly identified that this needs to be reviewed. but contract offers to pick 1 of many. so seems to be ok to review by requestor?"
+      },
+      "1": {
+        "verdict": "",
+        "comment": ""
+      },
+      "2": {
+        "verdict": "",
+        "comment": ""
+      },
+      "3": {
+        "verdict": "",
+        "comment": ""
+      },
+      "4": {
+        "verdict": "",
+        "comment": ""
+      },
+      "5": {
+        "verdict": "",
+        "comment": ""
+      },
+      "6": {
+        "verdict": "",
+        "comment": "should be green? because 10 years is within our \"OK\" range?"
+      },
+      "7": {
+        "verdict": "",
+        "comment": ""
+      },
+      "8": {
+        "verdict": "",
+        "comment": ""
+      },
+      "9": {
+        "verdict": "",
+        "comment": ""
+      },
+      "10": {
+        "verdict": "",
+        "comment": "Seems like important -> needs to warn to create a ticket and this actually needs to be in red. Blocker stoper"
+      },
+      "11": {
+        "verdict": "",
+        "comment": ""
+      }
+    },
+    "missedIssues": []
+  }
+]
