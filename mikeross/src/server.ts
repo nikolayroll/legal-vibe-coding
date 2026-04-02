@@ -112,7 +112,7 @@ app.post("/api/chat", async (req, res) => {
     res.setHeader("Connection", "keep-alive");
 
     const stream = anthropic.messages.stream({
-      model: "claude-haiku-4-5-20251001",
+      model: "claude-sonnet-4-6",
       max_tokens: 1024,
       system,
       messages,
@@ -162,7 +162,7 @@ app.post("/api/review-playbook", async (req, res) => {
       : playbookToText(getPlaybookData());
 
     const response = await anthropic.messages.create({
-      model: "claude-haiku-4-5-20251001",
+      model: "claude-sonnet-4-6",
       max_tokens: 4096,
       system: `You are a legal contract reviewer for Bolt Technology. Analyze counterparty NDAs against Bolt's NDA Playbook.
 
@@ -232,7 +232,7 @@ app.post("/api/review-step-by-step", async (req, res) => {
     const playbookText = buildStepByStepPlaybookText(playbookData);
 
     const response = await anthropic.messages.create({
-      model: "claude-haiku-4-5-20251001",
+      model: "claude-sonnet-4-6",
       max_tokens: 8192,
       system: `You are a legal contract reviewer for Bolt Technology. Do a comprehensive clause-by-clause review of a counterparty NDA against Bolt's NDA Playbook.
 
@@ -288,7 +288,7 @@ You MUST include every section and every clause from the playbook in your respon
 app.post("/api/runs", (req, res) => {
   const { contractName, issues } = req.body as { contractName: string; issues: unknown[] };
   const runs = readJsonFile<any[]>("runs.json", []);
-  const run = { id: randomUUID(), contractName, model: "claude-haiku-4-5-20251001", createdAt: new Date().toISOString(), issues };
+  const run = { id: randomUUID(), contractName, model: "claude-sonnet-4-6", createdAt: new Date().toISOString(), issues };
   runs.push(run);
   writeJsonFile("runs.json", runs);
   res.json({ id: run.id });
@@ -320,7 +320,7 @@ app.post("/api/step-runs", (req, res) => {
   const runs = readJsonFile<any[]>("step-runs.json", []);
   const run = {
     id: randomUUID(), contractName,
-    model: "claude-haiku-4-5-20251001",
+    model: "claude-sonnet-4-6",
     createdAt: new Date().toISOString(),
     sections, anomalousClauses,
   };
